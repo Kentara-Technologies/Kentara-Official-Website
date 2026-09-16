@@ -1,3 +1,9 @@
+// Kentara Technologies Site Configuration
+const KENTARA_CONFIG = {
+  whatsappDisplay: '+234 9162797282',
+  whatsappNumber: '2349162797282', // wa.me format (no +, spaces, or formatting characters)
+};
+
 document.addEventListener('DOMContentLoaded', () => {
   // Mobile Navigation Menu Toggle
   const mobileMenuBtn = document.getElementById('mobile-menu-toggle');

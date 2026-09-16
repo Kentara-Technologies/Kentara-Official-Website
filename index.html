@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kentara Technologies — Premium Custom Software for Growing Businesses</title>
+  <meta name="description" content="Kentara Technologies builds premium custom software, web apps, mobile apps, and cloud infrastructure for growing businesses with flexible payment options including Kentara Flex.">
+  <link rel="canonical" href="https://kentara.tech/">
+  
+  <!-- Open Graph / Meta -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://kentara.tech/">
+  <meta property="og:title" content="Kentara Technologies — Custom Software for Growing Businesses">
+  <meta property="og:description" content="Software built to help your business grow. Custom web, mobile, and cloud solutions with flexible payment models.">
+  <meta property="og:image" content="https://kentara.tech/assets/images/og-image.jpg">
+
+  <!-- Tailwind CDN & Custom Stylesheet -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'bg-primary': '#111317',
+            'bg-secondary': '#1A1D24',
+            'text-primary': '#F3F4F6',
+            'text-secondary': '#A4ACB9',
+            'accent-cyan': '#38BDF8',
+            'border-color': '#282D37',
+          },
+          fontFamily: {
+            heading: ['Plus Jakarta Sans', 'sans-serif'],
+            body: ['Inter', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body class="bg-[#111317] text-[#F3F4F6] font-body antialiased selection:bg-[#38BDF8] selection:text-[#0F172A]">
+
+  <!-- Header / Navigation -->
+  <header class="header-nav">
+    <div class="header-container">
+      <a href="index.html" class="logo-text" aria-label="Kentara Technologies Homepage">
+        <span class="logo-badge"></span>
+        <span>Kentara Technologies</span>
+      </a>
+
+      <nav aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li><a href="index.html" class="nav-link active">Home</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="services.html" class="nav-link">Services</a></li>
+          <li><a href="start-project.html" class="nav-link">Start a Project</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-cta hidden md:block">
+        <a href="start-project.html" class="btn-primary">Tell Us About Your Project</a>
+      </div>
+
+      <button id="mobile-menu-toggle" class="mobile-menu-btn md:hidden" aria-label="Open mobile menu" aria-expanded="false">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Overlay Menu -->
+  <div id="mobile-nav-overlay" class="mobile-nav-overlay" role="dialog" aria-modal="true" aria-label="Mobile Navigation">
+    <div class="mobile-nav-header">
+      <a href="index.html" class="logo-text">
+        <span class="logo-badge"></span>
+        <span>Kentara</span>
+      </a>
+      <button id="mobile-menu-close" class="mobile-menu-btn" aria-label="Close mobile menu">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+        </svg>
+      </button>
+    </div>
+    <ul class="mobile-nav-links">
+      <li><a href="index.html" class="mobile-nav-link active">Home</a></li>
+      <li><a href="about.html" class="mobile-nav-link">About</a></li>
+      <li><a href="services.html" class="mobile-nav-link">Services</a></li>
+      <li><a href="start-project.html" class="mobile-nav-link">Start a Project</a></li>
+    </ul>
+    <div class="mt-auto">
+      <a href="start-project.html" class="btn-primary w-full text-center">Tell Us About Your Project</a>
+    </div>
+  </div>
+
+  <main id="main-content">
+    
+    <!-- 1. HERO SECTION -->
+    <section class="section-spacing-lg border-divider">
+      <div class="site-container">
+        <div class="max-w-3xl">
+          <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-[#F3F4F6] tracking-tight leading-tight mb-6">
+            Software built to help your business grow.
+          </h1>
+          <p class="text-lg sm:text-xl text-[#A4ACB9] mb-10 leading-relaxed font-normal">
+            Kentara builds premium custom software for growing businesses — helping you operate more efficiently, move faster and build a stronger digital presence.
+          </p>
+          <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
+            <a href="start-project.html" class="btn-primary">Tell Us About Your Project</a>
+            <a href="services.html" class="btn-secondary">Explore Our Services</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. MISSION SECTION -->
+    <section class="section-spacing border-divider bg-[#111317]">
+      <div class="site-container">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-16 items-start">
+          <div class="lg:col-span-5">
+            <h2 class="text-2xl sm:text-3xl font-bold text-[#F3F4F6]">
+              Growing businesses deserve better software.
+            </h2>
+          </div>
+          <div class="lg:col-span-7">
+            <p class="text-lg text-[#A4ACB9] leading-relaxed mb-6">
+              Businesses should not have to choose between quality software and financial flexibility. 
+            </p>
+            <p class="text-base text-[#A4ACB9] leading-relaxed">
+              Kentara exists to help growing businesses build custom software that genuinely supports their goals while providing practical payment options tailored to real commercial timelines.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. HOW KENTARA HELPS BUSINESSES GROW -->
+    <section class="section-spacing border-divider">
+      <div class="site-container">
+        <div class="max-w-3xl mb-16">
+          <h2 class="text-2xl sm:text-3xl lg:text-4xl font-bold text-[#F3F4F6] mb-4">
+            Technology should do more than exist. It should move your business forward.
+          </h2>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-10 lg:gap-12">
+          <!-- 01 Efficiency -->
+          <div class="pt-6 border-t border-[#282D37]">
+            <div class="number-editorial">01</div>
+            <h3 class="text-xl font-bold text-[#F3F4F6] mb-1">Efficiency</h3>
+            <p class="text-sm font-semibold text-[#38BDF8] mb-3">Work better.</p>
+            <p class="text-sm text-[#A4ACB9] leading-relaxed">
+              Custom software can streamline repetitive processes, organize information and improve business workflows.
+            </p>
+          </div>
+
+          <!-- 02 Speed -->
+          <div class="pt-6 border-t border-[#282D37]">
+            <div class="number-editorial">02</div>
+            <h3 class="text-xl font-bold text-[#F3F4F6] mb-1">Speed</h3>
+            <p class="text-sm font-semibold text-[#38BDF8] mb-3">Move faster.</p>
+            <p class="text-sm text-[#A4ACB9] leading-relaxed">
+              Better systems can help businesses process work, serve customers and respond to opportunities faster.
+            </p>
+          </div>
+
+          <!-- 03 Visibility -->
+          <div class="pt-6 border-t border-[#282D37]">
+            <div class="number-editorial">03</div>
+            <h3 class="text-xl font-bold text-[#F3F4F6] mb-1">Visibility</h3>
+            <p class="text-sm font-semibold text-[#38BDF8] mb-3">Be easier to find.</p>
+            <p class="text-sm text-[#A4ACB9] leading-relaxed">
+              Professional digital experiences, websites and SEO can help businesses establish a stronger online presence.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. WHAT WE BUILD -->
+    <section class="section-spacing border-divider bg-[#1A1D24]/40">
+      <div class="site-container">
+        <div class="max-w-3xl mb-16">
+          <h2 class="text-2xl sm:text-3xl lg:text-4xl font-bold text-[#F3F4F6] mb-4">
+            Technology built around your business.
+          </h2>
+          <p class="text-base text-[#A4ACB9]">
+            We focus on software engineering that creates real operational value.
+          </p>
+        </div>
+
+        <!-- Primary Services (Strong visual emphasis via typography & layout) -->
+        <div class="space-y-12 mb-20">
+          <div class="pt-8 border-t border-[#282D37] grid grid-cols-1 md:grid-cols-12 gap-6 items-baseline">
+            <div class="md:col-span-5">
+              <h3 class="text-2xl font-bold text-[#F3F4F6]">Custom Web Development</h3>
+            </div>
+            <div class="md:col-span-7">
+              <p class="text-base text-[#A4ACB9] leading-relaxed">
+                Custom websites and web applications designed around your business, customers and workflows. Built with performance, reliability, and security at the foundation.
+              </p>
+            </div>
+          </div>
+
+          <div class="pt-8 border-t border-[#282D37] grid grid-cols-1 md:grid-cols-12 gap-6 items-baseline">
+            <div class="md:col-span-5">
+              <h3 class="text-2xl font-bold text-[#F3F4F6]">Custom Mobile Development</h3>
+            </div>
+            <div class="md:col-span-7">
+              <p class="text-base text-[#A4ACB9] leading-relaxed">
+                Mobile applications designed and built around your product, customers and business needs. Seamless cross-platform and native experiences.
+              </p>
+            </div>
+          </div>
+
+          <div class="pt-8 border-t border-[#282D37] grid grid-cols-1 md:grid-cols-12 gap-6 items-baseline">
+            <div class="md:col-span-5">
+              <h3 class="text-2xl font-bold text-[#F3F4F6]">Cloud Infrastructure</h3>
+            </div>
+            <div class="md:col-span-7">
+              <p class="text-base text-[#A4ACB9] leading-relaxed">
+                Cloud infrastructure and deployment solutions that help your software run reliably and scale with your business without unnecessary operational friction.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Supporting Services (Visually secondary text list) -->
+        <div class="pt-8 border-t border-[#282D37]">
+          <h4 class="text-sm font-semibold text-[#A4ACB9] uppercase tracking-wider mb-6">Supporting Capabilities</h4>
+          <div class="grid grid-cols-2 md:grid-cols-3 gap-y-4 gap-x-6 text-sm text-[#A4ACB9]">
+            <div class="flex items-center gap-2">
+              <span class="w-1.5 h-1.5 rounded-full bg-[#38BDF8]"></span>
+              <span>Product / UI Design</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <span class="w-1.5 h-1.5 rounded-full bg-[#38BDF8]"></span>
+              <span>Search Engine Optimization</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <span class="w-1.5 h-1.5 rounded-full bg-[#38BDF8]"></span>
+              <span>Hosting & Domain Management</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <span class="w-1.5 h-1.5 rounded-full bg-[#38BDF8]"></span>
+              <span>Maintenance & Monitoring</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <span class="w-1.5 h-1.5 rounded-full bg-[#38BDF8]"></span>
+              <span>Technical Support</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <span class="w-1.5 h-1.5 rounded-full bg-[#38BDF8]"></span>
+              <span>Project-Specific Integration</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 5. WHY KENTARA -->
+    <section class="section-spacing border-divider">
+      <div class="site-container">
+        <div class="max-w-3xl mb-16">
+          <h2 class="text-2xl sm:text-3xl lg:text-4xl font-bold text-[#F3F4F6] mb-4">
+            Built around the way your business works.
+          </h2>
+          <p class="text-base text-[#A4ACB9]">
+            Our engineering principles stem from transparency, purpose, and quality craftsmanship.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div class="pt-6 border-t border-[#282D37]">
+            <h3 class="text-lg font-bold text-[#F3F4F6] mb-2">Purpose</h3>
+            <p class="text-sm text-[#A4ACB9] leading-relaxed">
+              We build technology to solve real business problems, avoiding unnecessary fluff.
+            </p>
+          </div>
+
+          <div class="pt-6 border-t border-[#282D37]">
+            <h3 class="text-lg font-bold text-[#F3F4F6] mb-2">Transparency</h3>
+            <p class="text-sm text-[#A4ACB9] leading-relaxed">
+              Clear communication, honest expectations, and defined project scope at every stage.
+            </p>
+          </div>
+
+          <div class="pt-6 border-t border-[#282D37]">
+            <h3 class="text-lg font-bold text-[#F3F4F6] mb-2">Quality</h3>
+            <p class="text-sm text-[#A4ACB9] leading-relaxed">
+              Thoughtfully designed and engineered software that stands up to production demands.
+            </p>
+          </div>
+
+          <div class="pt-6 border-t border-[#282D37]">
+            <h3 class="text-lg font-bold text-[#F3F4F6] mb-2">Flexibility</h3>
+            <p class="text-sm text-[#A4ACB9] leading-relaxed">
+              Practical payment options designed around the financial realities of growing businesses.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. PAYMENT OPTIONS -->
+    <section class="section-spacing border-divider bg-[#1A1D24]/40">
+      <div class="site-container">
+        <div class="max-w-3xl mb-16">
+          <h2 class="text-2xl sm:text-3xl lg:text-4xl font-bold text-[#F3F4F6] mb-4">
+            Build the software your business needs. Pay in a way that works for you.
+          </h2>
+          <p class="text-base text-[#A4ACB9]">
+            We understand that cash flow alignment matters for expanding companies.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-10 mb-12">
+          <!-- Standard -->
+          <div class="p-8 bg-[#1A1D24] border border-[#282D37] rounded-lg">
+            <h3 class="text-xl font-bold text-[#F3F4F6] mb-2">Kentara Standard</h3>
+            <p class="text-sm text-[#A4ACB9] mb-6">Traditional milestone-based development structure.</p>
+            <ul class="space-y-3 text-sm text-[#F3F4F6] font-medium">
+              <li class="flex items-center gap-3">
+                <span class="text-[#38BDF8] font-bold">30%</span>
+                <span>Upfront deposit upon kickoff</span>
+              </li>
+              <li class="flex items-center gap-3">
+                <span class="text-[#38BDF8] font-bold">40%</span>
+                <span>At agreed project milestone</span>
+              </li>
+              <li class="flex items-center gap-3">
+                <span class="text-[#38BDF8] font-bold">30%</span>
+                <span>Upon final completion and handover</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Flex -->
+          <div class="p-8 bg-[#1A1D24] border border-[#38BDF8]/40 rounded-lg relative">
+            <div class="text-xs font-bold uppercase tracking-wider text-[#38BDF8] mb-2">Recommended for Eligible Businesses</div>
+            <h3 class="text-xl font-bold text-[#F3F4F6] mb-2">Kentara Flex</h3>
+            <p class="text-sm text-[#A4ACB9] mb-6">Spread your development balance post-launch.</p>
+            <p class="text-sm text-[#F3F4F6] leading-relaxed mb-4">
+              <strong>30% of the development fee upfront</strong>, with the remaining development balance paid over an agreed period after project completion.
+            </p>
+            <p class="text-xs text-[#A4ACB9] italic">
+              Third-party costs (such as cloud hosting, third-party APIs, and domain registration) are paid separately and are not financed by Kentara. Flex availability and terms depend on project scope and approval.
+            </p>
+          </div>
+        </div>
+
+        <!-- Strategic Partnerships -->
+        <div class="pt-6 border-t border-[#282D37]">
+          <h4 class="text-base font-bold text-[#F3F4F6] mb-1">Strategic Partnerships</h4>
+          <p class="text-sm text-[#A4ACB9]">
+            In selected cases, Kentara may consider strategic partnerships where there is strong mutual value and long-term business alignment.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. HOW IT WORKS -->
+    <section class="section-spacing border-divider">
+      <div class="site-container">
+        <div class="max-w-3xl mb-16">
+          <h2 class="text-2xl sm:text-3xl lg:text-4xl font-bold text-[#F3F4F6] mb-4">
+            From idea to working software.
+          </h2>
+          <p class="text-base text-[#A4ACB9]">
+            A structured, predictable progression to deliver custom technology efficiently.
+          </p>
+        </div>
+
+        <div class="space-y-8">
+          <!-- Step 1 -->
+          <div class="pt-6 border-t border-[#282D37] grid grid-cols-1 md:grid-cols-12 gap-4 items-baseline">
+            <div class="md:col-span-4 flex items-center gap-3">
+              <span class="number-editorial mb-0">01</span>
+              <h3 class="text-lg font-bold text-[#F3F4F6]">Tell Us About Your Project</h3>
+            </div>
+            <div class="md:col-span-8">
+              <p class="text-sm text-[#A4ACB9]">
+                Tell us about your business, what you're building and what you're trying to solve.
+              </p>
+            </div>
+          </div>
+
+          <!-- Step 2 -->
+          <div class="pt-6 border-t border-[#282D37] grid grid-cols-1 md:grid-cols-12 gap-4 items-baseline">
+            <div class="md:col-span-4 flex items-center gap-3">
+              <span class="number-editorial mb-0">02</span>
+              <h3 class="text-lg font-bold text-[#F3F4F6]">Discovery</h3>
+            </div>
+            <div class="md:col-span-8">
+              <p class="text-sm text-[#A4ACB9]">
+                We discuss your goals, requirements and the solution your business actually needs.
+              </p>
+            </div>
+          </div>
+
+          <!-- Step 3 -->
+          <div class="pt-6 border-t border-[#282D37] grid grid-cols-1 md:grid-cols-12 gap-4 items-baseline">
+            <div class="md:col-span-4 flex items-center gap-3">
+              <span class="number-editorial mb-0">03</span>
+              <h3 class="text-lg font-bold text-[#F3F4F6]">Proposal</h3>
+            </div>
+            <div class="md:col-span-8">
+              <p class="text-sm text-[#A4ACB9]">
+                You receive a clear project scope, timeline, pricing and recommended payment structure.
+              </p>
+            </div>
+          </div>
+
+          <!-- Step 4 -->
+          <div class="pt-6 border-t border-[#282D37] grid grid-cols-1 md:grid-cols-12 gap-4 items-baseline">
+            <div class="md:col-span-4 flex items-center gap-3">
+              <span class="number-editorial mb-0">04</span>
+              <h3 class="text-lg font-bold text-[#F3F4F6]">Build</h3>
+            </div>
+            <div class="md:col-span-8">
+              <p class="text-sm text-[#A4ACB9]">
+                Once everything is agreed, we design and build the solution with transparent updates.
+              </p>
+            </div>
+          </div>
+
+          <!-- Step 5 -->
+          <div class="pt-6 border-t border-[#282D37] grid grid-cols-1 md:grid-cols-12 gap-4 items-baseline">
+            <div class="md:col-span-4 flex items-center gap-3">
+              <span class="number-editorial mb-0">05</span>
+              <h3 class="text-lg font-bold text-[#F3F4F6]">Launch</h3>
+            </div>
+            <div class="md:col-span-8">
+              <p class="text-sm text-[#A4ACB9]">
+                We deliver the software and provide any agreed support or ongoing operational services.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 8. FOUNDER / TEAM -->
+    <section class="section-spacing border-divider bg-[#111317]">
+      <div class="site-container">
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-10 items-center">
+          <div class="md:col-span-5">
+            <img src="assets/images/odosa-enaruero.jpg" alt="Odosa Enaruero - Founder & CEO of Kentara Technologies" class="rounded-lg border border-[#282D37] max-w-full h-auto shadow-xl" width="500" height="500" loading="lazy">
+          </div>
+          <div class="md:col-span-7">
+            <h2 class="text-2xl sm:text-3xl font-bold text-[#F3F4F6] mb-2">Odosa Enaruero</h2>
+            <p class="text-sm font-semibold text-[#38BDF8] mb-6">Founder / CEO</p>
+            <blockquote class="text-lg text-[#F3F4F6] font-medium leading-relaxed italic mb-6">
+              "Kentara was founded with a simple belief: growing businesses deserve access to software that genuinely helps them move forward."
+            </blockquote>
+            <p class="text-base text-[#A4ACB9]">
+              We lead every engagement with technical excellence, absolute transparency, and commercial empathy for growing enterprises.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 9. PRODUCTS COMING SOON -->
+    <section class="section-spacing border-divider bg-[#1A1D24]/30">
+      <div class="site-container">
+        <div class="max-w-2xl">
+          <span class="text-xs font-bold uppercase tracking-wider text-[#38BDF8] mb-2 block">R&D Pipeline</span>
+          <h2 class="text-xl sm:text-2xl font-bold text-[#F3F4F6] mb-3">
+            We're building beyond client solutions.
+          </h2>
+          <p class="text-sm text-[#A4ACB9] mb-4 leading-relaxed">
+            Alongside the software we build for businesses, Kentara is working toward developing its own technology products.
+          </p>
+          <span class="inline-block text-xs font-semibold text-[#A4ACB9] bg-[#1A1D24] px-3 py-1.5 rounded border border-[#282D37]">
+            Products coming soon
+          </span>
+        </div>
+      </div>
+    </section>
+
+    <!-- 10. FINAL CTA -->
+    <section class="section-spacing-lg border-divider text-center">
+      <div class="site-container">
+        <div class="max-w-2xl mx-auto">
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-[#F3F4F6] mb-4">
+            Have a business idea that needs software?
+          </h2>
+          <p class="text-base text-[#A4ACB9] mb-8 leading-relaxed">
+            Tell us what you're building, what you're trying to solve and what you want your business to achieve.
+          </p>
+          <div>
+            <a href="start-project.html" class="btn-primary text-base px-8 py-4">Tell Us About Your Project</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- 11. FOOTER -->
+  <footer class="site-footer">
+    <div class="site-container">
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-10 mb-12">
+        
+        <div class="md:col-span-5">
+          <a href="index.html" class="logo-text mb-4 inline-flex">
+            <span class="logo-badge"></span>
+            <span>Kentara Technologies</span>
+          </a>
+          <p class="text-sm text-[#A4ACB9] leading-relaxed max-w-sm">
+            Kentara Technologies builds premium custom software for growing businesses — helping you operate efficiently, move faster, and establish a strong digital presence.
+          </p>
+        </div>
+
+        <div class="md:col-span-3">
+          <h4 class="text-xs font-semibold uppercase tracking-wider text-[#F3F4F6] mb-4">Navigation</h4>
+          <ul class="space-y-2.5 text-sm text-[#A4ACB9]">
+            <li><a href="index.html" class="hover:text-[#38BDF8]">Home</a></li>
+            <li><a href="about.html" class="hover:text-[#38BDF8]">About Us</a></li>
+            <li><a href="services.html" class="hover:text-[#38BDF8]">Services</a></li>
+            <li><a href="start-project.html" class="hover:text-[#38BDF8]">Start a Project</a></li>
+          </ul>
+        </div>
+
+        <div class="md:col-span-4">
+          <h4 class="text-xs font-semibold uppercase tracking-wider text-[#F3F4F6] mb-4">Contact & Information</h4>
+          <p class="text-sm text-[#A4ACB9] mb-2">Direct Inquiries: <a href="mailto:hello@kentara.tech" class="text-[#38BDF8] hover:underline">hello@kentara.tech</a></p>
+          <p class="text-sm text-[#A4ACB9] mb-4">Client Desk: <a href="mailto:info@kentara.tech" class="text-[#38BDF8] hover:underline">info@kentara.tech</a></p>
+          <div class="flex items-center gap-4 text-xs text-[#A4ACB9]">
+            <a href="https://linkedin.com" target="_blank" rel="noopener" class="hover:text-[#38BDF8]">LinkedIn</a>
+            <span>•</span>
+            <a href="https://twitter.com" target="_blank" rel="noopener" class="hover:text-[#38BDF8]">X (Twitter)</a>
+            <span>•</span>
+            <a href="https://github.com" target="_blank" rel="noopener" class="hover:text-[#38BDF8]">GitHub</a>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="pt-8 border-t border-[#282D37] flex flex-col sm:flex-row items-center justify-between text-xs text-[#A4ACB9] gap-4">
+        <p>&copy; 2026 Kentara Technologies. All rights reserved.</p>
+        <p>Human-led custom software development for growing businesses.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

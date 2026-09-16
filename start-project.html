@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Start a Project — Kentara Technologies</title>
+  <meta name="description" content="Tell us about your business project. Complete the Kentara Technologies project intake form to schedule a discovery call and receive a detailed software proposal.">
+  <link rel="canonical" href="https://kentara.tech/start-project.html">
+  
+  <!-- Open Graph / Meta -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://kentara.tech/start-project.html">
+  <meta property="og:title" content="Start a Project — Kentara Technologies">
+  <meta property="og:description" content="Tell us about your business and what software solution you want to build.">
+  <meta property="og:image" content="https://kentara.tech/assets/images/og-image.jpg">
+
+  <!-- Tailwind CDN & Custom Stylesheet -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'bg-primary': '#111317',
+            'bg-secondary': '#1A1D24',
+            'text-primary': '#F3F4F6',
+            'text-secondary': '#A4ACB9',
+            'accent-cyan': '#38BDF8',
+            'border-color': '#282D37',
+          },
+          fontFamily: {
+            heading: ['Plus Jakarta Sans', 'sans-serif'],
+            body: ['Inter', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body class="bg-[#111317] text-[#F3F4F6] font-body antialiased selection:bg-[#38BDF8] selection:text-[#0F172A]">
+
+  <!-- Header / Navigation -->
+  <header class="header-nav">
+    <div class="header-container">
+      <a href="index.html" class="logo-text" aria-label="Kentara Technologies Homepage">
+        <span class="logo-badge"></span>
+        <span>Kentara Technologies</span>
+      </a>
+
+      <nav aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="services.html" class="nav-link">Services</a></li>
+          <li><a href="start-project.html" class="nav-link active">Start a Project</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-cta hidden md:block">
+        <a href="#intake-form-section" class="btn-primary">Tell Us About Your Project</a>
+      </div>
+
+      <button id="mobile-menu-toggle" class="mobile-menu-btn md:hidden" aria-label="Open mobile menu" aria-expanded="false">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Overlay Menu -->
+  <div id="mobile-nav-overlay" class="mobile-nav-overlay" role="dialog" aria-modal="true" aria-label="Mobile Navigation">
+    <div class="mobile-nav-header">
+      <a href="index.html" class="logo-text">
+        <span class="logo-badge"></span>
+        <span>Kentara</span>
+      </a>
+      <button id="mobile-menu-close" class="mobile-menu-btn" aria-label="Close mobile menu">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+        </svg>
+      </button>
+    </div>
+    <ul class="mobile-nav-links">
+      <li><a href="index.html" class="mobile-nav-link">Home</a></li>
+      <li><a href="about.html" class="mobile-nav-link">About</a></li>
+      <li><a href="services.html" class="mobile-nav-link">Services</a></li>
+      <li><a href="start-project.html" class="mobile-nav-link active">Start a Project</a></li>
+    </ul>
+    <div class="mt-auto">
+      <a href="#intake-form-section" class="btn-primary w-full text-center">Tell Us About Your Project</a>
+    </div>
+  </div>
+
+  <main id="main-content">
+    
+    <!-- PAGE HERO -->
+    <section class="section-spacing-lg border-divider">
+      <div class="site-container">
+        <div class="max-w-3xl">
+          <h1 class="text-4xl sm:text-5xl font-extrabold text-[#F3F4F6] tracking-tight leading-tight mb-6">
+            Let's build something that moves your business forward.
+          </h1>
+          <p class="text-lg sm:text-xl text-[#A4ACB9] leading-relaxed mb-8">
+            Tell us about your business, what you're trying to build and what you want the software to achieve.
+          </p>
+          <div>
+            <a href="#intake-form-section" class="btn-primary text-base px-8 py-4">Complete the Project Intake Form</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROCESS OVERVIEW -->
+    <section class="section-spacing border-divider bg-[#1A1D24]/30">
+      <div class="site-container">
+        <div class="max-w-3xl mb-12">
+          <h2 class="text-2xl sm:text-3xl font-bold text-[#F3F4F6] mb-4">
+            How the Intake Process Works
+          </h2>
+          <p class="text-base text-[#A4ACB9]">
+            A simple 4-step path from initial submission to a clear project proposal.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div class="p-6 bg-[#1A1D24] border border-[#282D37] rounded-lg">
+            <span class="number-editorial">1</span>
+            <h3 class="text-base font-bold text-[#F3F4F6] mb-2">Tell Us About Your Project</h3>
+            <p class="text-sm text-[#A4ACB9]">Complete the intake form below with your project goals, timelines, and preferences.</p>
+          </div>
+
+          <div class="p-6 bg-[#1A1D24] border border-[#282D37] rounded-lg">
+            <span class="number-editorial">2</span>
+            <h3 class="text-base font-bold text-[#F3F4F6] mb-2">We Review Requirements</h3>
+            <p class="text-sm text-[#A4ACB9]">Our engineering team analyzes your operational needs within 24 hours.</p>
+          </div>
+
+          <div class="p-6 bg-[#1A1D24] border border-[#282D37] rounded-lg">
+            <span class="number-editorial">3</span>
+            <h3 class="text-base font-bold text-[#F3F4F6] mb-2">Discovery Call</h3>
+            <p class="text-sm text-[#A4ACB9]">We meet via call to clarify system architecture, key features, and scope.</p>
+          </div>
+
+          <div class="p-6 bg-[#1A1D24] border border-[#282D37] rounded-lg">
+            <span class="number-editorial">4</span>
+            <h3 class="text-base font-bold text-[#F3F4F6] mb-2">Receive Proposal</h3>
+            <p class="text-sm text-[#A4ACB9]">You receive a complete project breakdown with scope, timeline, and payment structure.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- INTAKE FORM SECTION -->
+    <section id="intake-form-section" class="section-spacing border-divider">
+      <div class="site-container">
+        <div class="max-w-3xl mx-auto">
+          
+          <div class="mb-10 text-center">
+            <h2 class="text-3xl font-bold text-[#F3F4F6] mb-3">Client Intake Form</h2>
+            <p class="text-base text-[#A4ACB9]">Please complete the details below so we can understand your business needs.</p>
+          </div>
+
+          <!-- Success Notification Banner -->
+          <div id="form-success-message" class="hidden mb-8 p-6 bg-[#1A1D24] border border-[#38BDF8] rounded-lg text-center">
+            <h3 class="text-xl font-bold text-[#38BDF8] mb-2">Thank you! Your intake request has been received.</h3>
+            <p class="text-sm text-[#A4ACB9]">Our team will review your project details and reach out within 24 business hours to schedule a discovery call.</p>
+          </div>
+
+          <form id="project-intake-form" class="space-y-6 bg-[#1A1D24]/60 p-8 sm:p-10 border border-[#282D37] rounded-lg">
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+              <div class="form-group">
+                <label for="full-name" class="form-label">Full Name *</label>
+                <input type="text" id="full-name" name="name" required class="form-input" placeholder="e.g. Alex Johnson">
+              </div>
+
+              <div class="form-group">
+                <label for="email-address" class="form-label">Work Email Address *</label>
+                <input type="email" id="email-address" name="email" required class="form-input" placeholder="alex@company.com">
+              </div>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+              <div class="form-group">
+                <label for="phone-number" class="form-label">Phone / WhatsApp Number</label>
+                <input type="tel" id="phone-number" name="phone" class="form-input" placeholder="+234 ...">
+              </div>
+
+              <div class="form-group">
+                <label for="company-name" class="form-label">Company / Organization *</label>
+                <input type="text" id="company-name" name="company" required class="form-input" placeholder="Your business name">
+              </div>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+              <div class="form-group">
+                <label for="service-type" class="form-label">Primary Service Required *</label>
+                <select id="service-type" name="service" required class="form-select">
+                  <option value="" disabled selected>Select service type</option>
+                  <option value="web-development">Custom Web Development</option>
+                  <option value="mobile-development">Custom Mobile Development</option>
+                  <option value="cloud-infrastructure">Cloud Infrastructure & DevOps</option>
+                  <option value="full-stack">Full Software Suite (Web + Mobile + Cloud)</option>
+                  <option value="other">Other Project Requirements</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="payment-preference" class="form-label">Preferred Payment Model</label>
+                <select id="payment-preference" name="payment_model" class="form-select">
+                  <option value="undecided">To be discussed</option>
+                  <option value="kentara-standard">Kentara Standard (30/40/30 Milestone)</option>
+                  <option value="kentara-flex">Kentara Flex (30% Upfront, Balance Post-Launch)</option>
+                  <option value="strategic-partnership">Strategic Partnership Consideration</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="project-description" class="form-label">Project Overview & Objectives *</label>
+              <textarea id="project-description" name="description" rows="5" required class="form-textarea" placeholder="Tell us what you are building, key problems to solve, target audience, and expected launch timeline..."></textarea>
+            </div>
+
+            <div>
+              <button type="submit" class="btn-primary w-full text-center text-base py-4">
+                Complete the Project Intake Form
+              </button>
+            </div>
+
+            <p class="text-xs text-center text-[#A4ACB9] mt-4">
+              We respect your privacy. Your project details are kept strictly confidential under default non-disclosure standards.
+            </p>
+          </form>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- DIRECT CONTACT SLA -->
+    <section class="section-spacing border-divider bg-[#1A1D24]/20 text-center">
+      <div class="site-container max-w-xl mx-auto">
+        <h3 class="text-xl font-bold text-[#F3F4F6] mb-2">Prefer direct email communication?</h3>
+        <p class="text-sm text-[#A4ACB9] mb-4">
+          You can send your project details or RFC documents directly to our founder and engineering desk:
+        </p>
+        <p class="text-base font-semibold text-[#38BDF8]">
+          <a href="mailto:hello@kentara.tech" class="hover:underline">hello@kentara.tech</a>
+        </p>
+        <p class="text-xs text-[#A4ACB9] mt-3">
+          We typically acknowledge and respond to all inquiries within 24 hours.
+        </p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="site-container">
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-10 mb-12">
+        
+        <div class="md:col-span-5">
+          <a href="index.html" class="logo-text mb-4 inline-flex">
+            <span class="logo-badge"></span>
+            <span>Kentara Technologies</span>
+          </a>
+          <p class="text-sm text-[#A4ACB9] leading-relaxed max-w-sm">
+            Kentara Technologies builds premium custom software for growing businesses — helping you operate efficiently, move faster, and establish a strong digital presence.
+          </p>
+        </div>
+
+        <div class="md:col-span-3">
+          <h4 class="text-xs font-semibold uppercase tracking-wider text-[#F3F4F6] mb-4">Navigation</h4>
+          <ul class="space-y-2.5 text-sm text-[#A4ACB9]">
+            <li><a href="index.html" class="hover:text-[#38BDF8]">Home</a></li>
+            <li><a href="about.html" class="hover:text-[#38BDF8]">About Us</a></li>
+            <li><a href="services.html" class="hover:text-[#38BDF8]">Services</a></li>
+            <li><a href="start-project.html" class="hover:text-[#38BDF8]">Start a Project</a></li>
+          </ul>
+        </div>
+
+        <div class="md:col-span-4">
+          <h4 class="text-xs font-semibold uppercase tracking-wider text-[#F3F4F6] mb-4">Contact & Information</h4>
+          <p class="text-sm text-[#A4ACB9] mb-2">Direct Inquiries: <a href="mailto:hello@kentara.tech" class="text-[#38BDF8] hover:underline">hello@kentara.tech</a></p>
+          <p class="text-sm text-[#A4ACB9] mb-4">Client Desk: <a href="mailto:info@kentara.tech" class="text-[#38BDF8] hover:underline">info@kentara.tech</a></p>
+          <div class="flex items-center gap-4 text-xs text-[#A4ACB9]">
+            <a href="https://linkedin.com" target="_blank" rel="noopener" class="hover:text-[#38BDF8]">LinkedIn</a>
+            <span>•</span>
+            <a href="https://twitter.com" target="_blank" rel="noopener" class="hover:text-[#38BDF8]">X (Twitter)</a>
+            <span>•</span>
+            <a href="https://github.com" target="_blank" rel="noopener" class="hover:text-[#38BDF8]">GitHub</a>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="pt-8 border-t border-[#282D37] flex flex-col sm:flex-row items-center justify-between text-xs text-[#A4ACB9] gap-4">
+        <p>&copy; 2026 Kentara Technologies. All rights reserved.</p>
+        <p>Human-led custom software development for growing businesses.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

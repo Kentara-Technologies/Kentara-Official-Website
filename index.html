@@ -23,6 +23,7 @@
           colors: {
             'bg-primary': '#111317',
             'bg-secondary': '#1A1D24',
+            'bg-tertiary': '#222731',
             'text-primary': '#F3F4F6',
             'text-secondary': '#A4ACB9',
             'accent-cyan': '#38BDF8',
@@ -43,9 +44,8 @@
   <!-- Header / Navigation -->
   <header class="header-nav">
     <div class="header-container">
-      <a href="index.html" class="logo-text" aria-label="Kentara Technologies Homepage">
-        <span class="logo-badge"></span>
-        <span>Kentara Technologies</span>
+      <a href="index.html" class="flex items-center" aria-label="Kentara Technologies Homepage">
+        <img src="assets/images/kentara-logo-trans2.png" alt="Kentara Technologies" class="brand-logo-img" >
       </a>
 
       <nav aria-label="Main Navigation">
@@ -58,7 +58,7 @@
       </nav>
 
       <div class="header-cta hidden md:block">
-        <a href="start-project.html" class="btn-primary">Tell Us About Your Project</a>
+        <a href="https://forms.gle/9kRRdiPnqm9UMF2G8" target="_blank" rel="noopener" class="btn-primary">Tell Us About Your Project</a>
       </div>
 
       <button id="mobile-menu-toggle" class="mobile-menu-btn md:hidden" aria-label="Open mobile menu" aria-expanded="false">
@@ -72,9 +72,8 @@
   <!-- Mobile Overlay Menu -->
   <div id="mobile-nav-overlay" class="mobile-nav-overlay" role="dialog" aria-modal="true" aria-label="Mobile Navigation">
     <div class="mobile-nav-header">
-      <a href="index.html" class="logo-text">
-        <span class="logo-badge"></span>
-        <span>Kentara</span>
+      <a href="index.html" class="flex items-center">
+        <img src="assets/images/kentara-logo-trans2.png" alt="Kentara Technologies" class="brand-logo-img">
       </a>
       <button id="mobile-menu-close" class="mobile-menu-btn" aria-label="Close mobile menu">
         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -89,15 +88,30 @@
       <li><a href="start-project.html" class="mobile-nav-link">Start a Project</a></li>
     </ul>
     <div class="mt-auto">
-      <a href="start-project.html" class="btn-primary w-full text-center">Tell Us About Your Project</a>
+      <a href="https://forms.gle/9kRRdiPnqm9UMF2G8" target="_blank" rel="noopener" class="btn-primary w-full text-center">Tell Us About Your Project</a>
     </div>
   </div>
 
   <main id="main-content">
     
-    <!-- 1. HERO SECTION -->
-    <section class="section-spacing-lg border-divider">
-      <div class="site-container">
+    <!-- 1. HERO SECTION (Min Height 60vh on Desktop + Subtle Cyan Tech Grid SVG) -->
+    <section class="relative overflow-hidden border-divider bg-[#111317] py-16 md:py-24 lg:py-28 min-h-0 md:min-h-[65vh] flex flex-col justify-center">
+      
+      <!-- Subtle Technical Grid Background Pattern (Cyan #38BDF8 low opacity) -->
+      <div class="absolute inset-0 pointer-events-none z-0 overflow-hidden opacity-[0.08]" aria-hidden="true">
+        <svg class="w-full h-full" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <pattern id="hero-tech-grid" width="60" height="60" patternUnits="userSpaceOnUse">
+              <path d="M 60 0 L 0 0 0 60" fill="none" stroke="#38BDF8" stroke-width="1"/>
+              <circle cx="60" cy="0" r="2" fill="#38BDF8"/>
+              <circle cx="0" cy="60" r="2" fill="#38BDF8"/>
+            </pattern>
+          </defs>
+          <rect width="100%" height="100%" fill="url(#hero-tech-grid)"/>
+        </svg>
+      </div>
+
+      <div class="site-container relative z-10">
         <div class="max-w-3xl">
           <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-[#F3F4F6] tracking-tight leading-tight mb-6">
             Software built to help your business grow.
@@ -106,25 +120,25 @@
             Kentara builds premium custom software for growing businesses — helping you operate more efficiently, move faster and build a stronger digital presence.
           </p>
           <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
-            <a href="start-project.html" class="btn-primary">Tell Us About Your Project</a>
+            <a href="https://forms.gle/9kRRdiPnqm9UMF2G8" target="_blank" rel="noopener" class="btn-primary">Tell Us About Your Project</a>
             <a href="services.html" class="btn-secondary">Explore Our Services</a>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- 2. MISSION SECTION -->
-    <section class="section-spacing border-divider bg-[#111317]">
+    <!-- 2. MISSION SECTION (Surface: #1A1D24) -->
+    <section class="section-spacing border-divider bg-[#1A1D24]">
       <div class="site-container">
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-16 items-start">
           <div class="lg:col-span-5">
             <h2 class="text-2xl sm:text-3xl font-bold text-[#F3F4F6]">
-              Growing businesses deserve better software.
+              Our Mission — Growing businesses deserve better software.
             </h2>
           </div>
           <div class="lg:col-span-7">
-            <p class="text-lg text-[#A4ACB9] leading-relaxed mb-6">
-              Businesses should not have to choose between quality software and financial flexibility. 
+            <p class="text-lg text-[#F3F4F6] font-medium leading-relaxed mb-4">
+              Businesses should not have to choose between quality software and financial flexibility.
             </p>
             <p class="text-base text-[#A4ACB9] leading-relaxed">
               Kentara exists to help growing businesses build custom software that genuinely supports their goals while providing practical payment options tailored to real commercial timelines.
@@ -134,12 +148,12 @@
       </div>
     </section>
 
-    <!-- 3. HOW KENTARA HELPS BUSINESSES GROW -->
-    <section class="section-spacing border-divider">
+    <!-- 3. HOW KENTARA HELPS BUSINESSES GROW (Canvas: #111317) -->
+    <section class="section-spacing border-divider bg-[#111317]">
       <div class="site-container">
         <div class="max-w-3xl mb-16">
           <h2 class="text-2xl sm:text-3xl lg:text-4xl font-bold text-[#F3F4F6] mb-4">
-            Technology should do more than exist. It should move your business forward.
+            How We Help — Technology should do more than exist. It should move your business forward.
           </h2>
         </div>
 
@@ -177,20 +191,20 @@
       </div>
     </section>
 
-    <!-- 4. WHAT WE BUILD -->
-    <section class="section-spacing border-divider bg-[#1A1D24]/40">
+    <!-- 4. WHAT WE BUILD (Surface: #1A1D24) -->
+    <section class="section-spacing border-divider bg-[#1A1D24]">
       <div class="site-container">
         <div class="max-w-3xl mb-16">
           <h2 class="text-2xl sm:text-3xl lg:text-4xl font-bold text-[#F3F4F6] mb-4">
-            Technology built around your business.
+            Core Capabilities — Custom software built around your business.
           </h2>
           <p class="text-base text-[#A4ACB9]">
             We focus on software engineering that creates real operational value.
           </p>
         </div>
 
-        <!-- Primary Services (Strong visual emphasis via typography & layout) -->
-        <div class="space-y-12 mb-20">
+        <!-- Primary Services -->
+        <div class="space-y-12 mb-16">
           <div class="pt-8 border-t border-[#282D37] grid grid-cols-1 md:grid-cols-12 gap-6 items-baseline">
             <div class="md:col-span-5">
               <h3 class="text-2xl font-bold text-[#F3F4F6]">Custom Web Development</h3>
@@ -225,9 +239,9 @@
           </div>
         </div>
 
-        <!-- Supporting Services (Visually secondary text list) -->
+        <!-- Supporting Services -->
         <div class="pt-8 border-t border-[#282D37]">
-          <h4 class="text-sm font-semibold text-[#A4ACB9] uppercase tracking-wider mb-6">Supporting Capabilities</h4>
+          <h4 class="text-xs font-semibold text-[#A4ACB9] uppercase tracking-wider mb-6">Supporting Capabilities</h4>
           <div class="grid grid-cols-2 md:grid-cols-3 gap-y-4 gap-x-6 text-sm text-[#A4ACB9]">
             <div class="flex items-center gap-2">
               <span class="w-1.5 h-1.5 rounded-full bg-[#38BDF8]"></span>
@@ -251,7 +265,7 @@
             </div>
             <div class="flex items-center gap-2">
               <span class="w-1.5 h-1.5 rounded-full bg-[#38BDF8]"></span>
-              <span>Project-Specific Integration</span>
+              <span>Project-Specific Requirements</span>
             </div>
           </div>
         </div>
@@ -259,12 +273,12 @@
       </div>
     </section>
 
-    <!-- 5. WHY KENTARA -->
-    <section class="section-spacing border-divider">
+    <!-- 5. WHY KENTARA (Canvas: #111317) -->
+    <section class="section-spacing border-divider bg-[#111317]">
       <div class="site-container">
         <div class="max-w-3xl mb-16">
           <h2 class="text-2xl sm:text-3xl lg:text-4xl font-bold text-[#F3F4F6] mb-4">
-            Built around the way your business works.
+            Engineering Principles — Built around the way your business works.
           </h2>
           <p class="text-base text-[#A4ACB9]">
             Our engineering principles stem from transparency, purpose, and quality craftsmanship.
@@ -275,7 +289,7 @@
           <div class="pt-6 border-t border-[#282D37]">
             <h3 class="text-lg font-bold text-[#F3F4F6] mb-2">Purpose</h3>
             <p class="text-sm text-[#A4ACB9] leading-relaxed">
-              We build technology to solve real business problems, avoiding unnecessary fluff.
+              We build technology to solve real business problems, keeping solutions clean and useful.
             </p>
           </div>
 
@@ -296,30 +310,30 @@
           <div class="pt-6 border-t border-[#282D37]">
             <h3 class="text-lg font-bold text-[#F3F4F6] mb-2">Flexibility</h3>
             <p class="text-sm text-[#A4ACB9] leading-relaxed">
-              Practical payment options designed around the financial realities of growing businesses.
+              Practical payment options designed around the commercial realities of growing businesses.
             </p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- 6. PAYMENT OPTIONS -->
-    <section class="section-spacing border-divider bg-[#1A1D24]/40">
+    <!-- 6. PAYMENT OPTIONS (Distinct Surface: #1A1D24) -->
+    <section class="section-spacing border-divider bg-[#1A1D24]">
       <div class="site-container">
         <div class="max-w-3xl mb-16">
           <h2 class="text-2xl sm:text-3xl lg:text-4xl font-bold text-[#F3F4F6] mb-4">
-            Build the software your business needs. Pay in a way that works for you.
+            Flexible Payment Structures — Build the software you need, pay on terms that fit.
           </h2>
           <p class="text-base text-[#A4ACB9]">
-            We understand that cash flow alignment matters for expanding companies.
+            Payment options that align software investments with your operational cash flow.
           </p>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-10 mb-12">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
           <!-- Standard -->
-          <div class="p-8 bg-[#1A1D24] border border-[#282D37] rounded-lg">
+          <div class="p-8 bg-[#111317] border border-[#282D37] rounded-lg">
             <h3 class="text-xl font-bold text-[#F3F4F6] mb-2">Kentara Standard</h3>
-            <p class="text-sm text-[#A4ACB9] mb-6">Traditional milestone-based development structure.</p>
+            <p class="text-sm text-[#A4ACB9] mb-6">Traditional milestone-based payment structure.</p>
             <ul class="space-y-3 text-sm text-[#F3F4F6] font-medium">
               <li class="flex items-center gap-3">
                 <span class="text-[#38BDF8] font-bold">30%</span>
@@ -337,35 +351,35 @@
           </div>
 
           <!-- Flex -->
-          <div class="p-8 bg-[#1A1D24] border border-[#38BDF8]/40 rounded-lg relative">
-            <div class="text-xs font-bold uppercase tracking-wider text-[#38BDF8] mb-2">Recommended for Eligible Businesses</div>
+          <div class="p-8 bg-[#111317] border border-[#38BDF8]/40 rounded-lg">
+            <div class="text-xs font-bold uppercase tracking-wider text-[#38BDF8] mb-2">Available for Eligible Clients</div>
             <h3 class="text-xl font-bold text-[#F3F4F6] mb-2">Kentara Flex</h3>
-            <p class="text-sm text-[#A4ACB9] mb-6">Spread your development balance post-launch.</p>
+            <p class="text-sm text-[#A4ACB9] mb-6">Spread your remaining development fee over time.</p>
             <p class="text-sm text-[#F3F4F6] leading-relaxed mb-4">
-              <strong>30% of the development fee upfront</strong>, with the remaining development balance paid over an agreed period after project completion.
+              <strong>30% of the development fee upfront</strong>, with the remaining 70% paid over an agreed period after project completion and launch.
             </p>
             <p class="text-xs text-[#A4ACB9] italic">
-              Third-party costs (such as cloud hosting, third-party APIs, and domain registration) are paid separately and are not financed by Kentara. Flex availability and terms depend on project scope and approval.
+              Third-party costs are paid separately and are not financed by Kentara. Terms and availability depend on project scope and approval.
             </p>
           </div>
         </div>
 
         <!-- Strategic Partnerships -->
         <div class="pt-6 border-t border-[#282D37]">
-          <h4 class="text-base font-bold text-[#F3F4F6] mb-1">Strategic Partnerships</h4>
+          <h4 class="text-sm font-bold text-[#F3F4F6] mb-1">Strategic Partnerships</h4>
           <p class="text-sm text-[#A4ACB9]">
-            In selected cases, Kentara may consider strategic partnerships where there is strong mutual value and long-term business alignment.
+            In selected cases, Kentara may consider strategic partnerships where there is strong mutual value.
           </p>
         </div>
       </div>
     </section>
 
-    <!-- 7. HOW IT WORKS -->
-    <section class="section-spacing border-divider">
+    <!-- 7. HOW IT WORKS (Canvas: #111317) -->
+    <section class="section-spacing border-divider bg-[#111317]">
       <div class="site-container">
         <div class="max-w-3xl mb-16">
           <h2 class="text-2xl sm:text-3xl lg:text-4xl font-bold text-[#F3F4F6] mb-4">
-            From idea to working software.
+            Our Process — From initial idea to working software.
           </h2>
           <p class="text-base text-[#A4ACB9]">
             A structured, predictable progression to deliver custom technology efficiently.
@@ -441,15 +455,15 @@
       </div>
     </section>
 
-    <!-- 8. FOUNDER / TEAM -->
-    <section class="section-spacing border-divider bg-[#111317]">
+    <!-- 8. FOUNDER / TEAM (Surface: #1A1D24) -->
+    <section class="section-spacing border-divider bg-[#1A1D24]">
       <div class="site-container">
         <div class="grid grid-cols-1 md:grid-cols-12 gap-10 items-center">
           <div class="md:col-span-5">
             <img src="assets/images/odosa-enaruero.jpg" alt="Odosa Enaruero - Founder & CEO of Kentara Technologies" class="rounded-lg border border-[#282D37] max-w-full h-auto shadow-xl" width="500" height="500" loading="lazy">
           </div>
           <div class="md:col-span-7">
-            <h2 class="text-2xl sm:text-3xl font-bold text-[#F3F4F6] mb-2">Odosa Enaruero</h2>
+            <h2 class="text-2xl sm:text-3xl font-bold text-[#F3F4F6] mb-1">Odosamamwen Enaruero</h2>
             <p class="text-sm font-semibold text-[#38BDF8] mb-6">Founder / CEO</p>
             <blockquote class="text-lg text-[#F3F4F6] font-medium leading-relaxed italic mb-6">
               "Kentara was founded with a simple belief: growing businesses deserve access to software that genuinely helps them move forward."
@@ -462,16 +476,16 @@
       </div>
     </section>
 
-    <!-- 9. PRODUCTS COMING SOON -->
-    <section class="section-spacing border-divider bg-[#1A1D24]/30">
+    <!-- 9. PRODUCTS COMING SOON (Surface: #222731) -->
+    <section class="section-spacing border-divider bg-[#222731]/60">
       <div class="site-container">
         <div class="max-w-2xl">
           <span class="text-xs font-bold uppercase tracking-wider text-[#38BDF8] mb-2 block">R&D Pipeline</span>
           <h2 class="text-xl sm:text-2xl font-bold text-[#F3F4F6] mb-3">
-            We're building beyond client solutions.
+            Technology we are building beyond client solutions.
           </h2>
           <p class="text-sm text-[#A4ACB9] mb-4 leading-relaxed">
-            Alongside the software we build for businesses, Kentara is working toward developing its own technology products.
+            Alongside the custom software we build for businesses, Kentara is actively developing its own suite of proprietary technology products.
           </p>
           <span class="inline-block text-xs font-semibold text-[#A4ACB9] bg-[#1A1D24] px-3 py-1.5 rounded border border-[#282D37]">
             Products coming soon
@@ -480,18 +494,18 @@
       </div>
     </section>
 
-    <!-- 10. FINAL CTA -->
-    <section class="section-spacing-lg border-divider text-center">
+    <!-- 10. FINAL CTA (Surface: #1A1D24) -->
+    <section class="section-spacing-lg border-divider bg-[#1A1D24] text-center">
       <div class="site-container">
         <div class="max-w-2xl mx-auto">
           <h2 class="text-3xl sm:text-4xl font-extrabold text-[#F3F4F6] mb-4">
-            Have a business idea that needs software?
+            Get Started — Have a business idea that needs software?
           </h2>
           <p class="text-base text-[#A4ACB9] mb-8 leading-relaxed">
             Tell us what you're building, what you're trying to solve and what you want your business to achieve.
           </p>
           <div>
-            <a href="start-project.html" class="btn-primary text-base px-8 py-4">Tell Us About Your Project</a>
+            <a href="https://forms.gle/9kRRdiPnqm9UMF2G8" target="_blank" rel="noopener" class="btn-primary text-base px-8 py-4">Tell Us About Your Project</a>
           </div>
         </div>
       </div>
@@ -499,41 +513,38 @@
 
   </main>
 
-  <!-- 11. FOOTER -->
+  <!-- 11. FOOTER (Canvas: #111317) -->
   <footer class="site-footer">
     <div class="site-container">
       <div class="grid grid-cols-1 md:grid-cols-12 gap-10 mb-12">
         
         <div class="md:col-span-5">
-          <a href="index.html" class="logo-text mb-4 inline-flex">
-            <span class="logo-badge"></span>
-            <span>Kentara Technologies</span>
+          <a href="index.html" class="inline-block mb-3" aria-label="Kentara Technologies Homepage">
+            <img src="assets/images/kentara-logo-trans2.png" alt="Kentara Technologies" class="brand-logo-img">
           </a>
-          <p class="text-sm text-[#A4ACB9] leading-relaxed max-w-sm">
-            Kentara Technologies builds premium custom software for growing businesses — helping you operate efficiently, move faster, and establish a strong digital presence.
-          </p>
         </div>
 
         <div class="md:col-span-3">
           <h4 class="text-xs font-semibold uppercase tracking-wider text-[#F3F4F6] mb-4">Navigation</h4>
           <ul class="space-y-2.5 text-sm text-[#A4ACB9]">
             <li><a href="index.html" class="hover:text-[#38BDF8]">Home</a></li>
-            <li><a href="about.html" class="hover:text-[#38BDF8]">About Us</a></li>
+            <li><a href="about.html" class="hover:text-[#38BDF8]">About</a></li>
             <li><a href="services.html" class="hover:text-[#38BDF8]">Services</a></li>
             <li><a href="start-project.html" class="hover:text-[#38BDF8]">Start a Project</a></li>
           </ul>
         </div>
 
         <div class="md:col-span-4">
-          <h4 class="text-xs font-semibold uppercase tracking-wider text-[#F3F4F6] mb-4">Contact & Information</h4>
-          <p class="text-sm text-[#A4ACB9] mb-2">Direct Inquiries: <a href="mailto:hello@kentara.tech" class="text-[#38BDF8] hover:underline">hello@kentara.tech</a></p>
-          <p class="text-sm text-[#A4ACB9] mb-4">Client Desk: <a href="mailto:info@kentara.tech" class="text-[#38BDF8] hover:underline">info@kentara.tech</a></p>
-          <div class="flex items-center gap-4 text-xs text-[#A4ACB9]">
-            <a href="https://linkedin.com" target="_blank" rel="noopener" class="hover:text-[#38BDF8]">LinkedIn</a>
-            <span>•</span>
-            <a href="https://twitter.com" target="_blank" rel="noopener" class="hover:text-[#38BDF8]">X (Twitter)</a>
-            <span>•</span>
-            <a href="https://github.com" target="_blank" rel="noopener" class="hover:text-[#38BDF8]">GitHub</a>
+          <h4 class="text-xs font-semibold uppercase tracking-wider text-[#F3F4F6] mb-4">Connect</h4>
+          <div class="flex items-center gap-6 text-sm text-[#A4ACB9]">
+            <a href="https://www.linkedin.com/company/kentara-technologies" target="_blank" rel="noopener" class="flex items-center gap-2 hover:text-[#38BDF8] transition-colors">
+              <svg class="w-4 h-4 text-[#38BDF8] shrink-0" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 10.9v8.37H9.25V10.9H6.46M7.86 6.78a1.62 1.62 0 1 0 0 3.24 1.62 1.62 0 0 0 0-3.24z"/></svg>
+              <span>LinkedIn</span>
+            </a>
+            <a href="https://www.instagram.com/kentaratech/" target="_blank" rel="noopener" class="flex items-center gap-2 hover:text-[#38BDF8] transition-colors">
+              <svg class="w-4 h-4 text-[#38BDF8] shrink-0" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+              <span>Instagram</span>
+            </a>
           </div>
         </div>
 
@@ -541,7 +552,6 @@
 
       <div class="pt-8 border-t border-[#282D37] flex flex-col sm:flex-row items-center justify-between text-xs text-[#A4ACB9] gap-4">
         <p>&copy; 2026 Kentara Technologies. All rights reserved.</p>
-        <p>Human-led custom software development for growing businesses.</p>
       </div>
     </div>
   </footer>

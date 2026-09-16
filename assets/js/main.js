@@ -35,32 +35,4 @@ document.addEventListener('DOMContentLoaded', () => {
       link.addEventListener('click', closeMenu);
     });
   }
-
-  // Client Intake Form Handler (Start a Project Page)
-  const intakeForm = document.getElementById('project-intake-form');
-  const formSuccessMessage = document.getElementById('form-success-message');
-
-  if (intakeForm) {
-    intakeForm.addEventListener('submit', (e) => {
-      e.preventDefault();
-      
-      const submitBtn = intakeForm.querySelector('button[type="submit"]');
-      if (submitBtn) {
-        submitBtn.disabled = true;
-        submitBtn.textContent = 'Submitting...';
-      }
-
-      setTimeout(() => {
-        intakeForm.reset();
-        if (submitBtn) {
-          submitBtn.disabled = false;
-          submitBtn.textContent = 'Complete the Project Intake Form';
-        }
-        if (formSuccessMessage) {
-          formSuccessMessage.style.display = 'block';
-          formSuccessMessage.scrollIntoView({ behavior: 'smooth', block: 'center' });
-        }
-      }, 700);
-    });
-  }
 });

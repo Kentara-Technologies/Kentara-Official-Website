@@ -2,13 +2,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap');
 
 :root {
-  --bg-primary: #111317;
-  --bg-secondary: #1A1D24;
-  --text-primary: #F3F4F6;
-  --text-secondary: #A4ACB9;
-  --accent-cyan: #38BDF8;
+  --bg-primary: #111317;        /* Obsidian / Primary Canvas */
+  --bg-secondary: #1A1D24;      /* Elevated Charcoal / Secondary Surface */
+  --bg-tertiary: #222731;       /* Soft Slate / Occasional Surface */
+  --text-primary: #F3F4F6;     /* Off-White / Primary Text */
+  --text-secondary: #A4ACB9;   /* Cool Slate / Secondary Text */
+  --accent-cyan: #38BDF8;       /* Precision Cyan / Accent */
   --accent-cyan-hover: #0EA5E9;
-  --border-color: #282D37;
+  --border-color: #282D37;      /* Subtle Border */
+  --bg-light: #F8F9FB;          /* Light Canvas */
   --font-heading: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
   --font-body: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
 }
@@ -44,7 +46,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-heading);
   color: var(--text-primary);
   font-weight: 700;
-  line-height: 1.2;
+  line-height: 1.25;
   letter-spacing: -0.02em;
 }
 
@@ -74,7 +76,7 @@ a {
   transition: color 0.2s ease, border-color 0.2s ease, background-color 0.2s ease;
 }
 
-a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible {
+a:focus-visible, button:focus-visible {
   outline: 2px solid var(--accent-cyan);
   outline-offset: 3px;
 }
@@ -144,7 +146,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
   position: sticky;
   top: 0;
   z-index: 50;
-  background-color: rgba(17, 19, 23, 0.92);
+  background-color: rgba(17, 19, 23, 0.94);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   border-bottom: 1px solid var(--border-color);
@@ -153,29 +155,18 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
 .header-container {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 1.25rem 1.5rem;
+  padding: 1rem 1.5rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.logo-text {
-  font-family: var(--font-heading);
-  font-weight: 800;
-  font-size: 1.25rem;
-  color: var(--text-primary);
-  letter-spacing: -0.03em;
-  display: flex;
-  align-items: center;
-  gap: 0.625rem;
-}
-
-.logo-badge {
-  width: 10px;
-  height: 10px;
-  background-color: var(--accent-cyan);
-  border-radius: 2px;
-  display: inline-block;
+/* Logo Sizing Sizing Enhancement */
+.brand-logo-img {
+  height: 55px;
+  width: auto;
+  display: block;
+  object-fit: contain;
 }
 
 .nav-links {
@@ -259,7 +250,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
   color: var(--accent-cyan);
 }
 
-/* Layout & Spacing Rules */
+/* Layout & Surface Rules */
 .site-container {
   max-width: 1280px;
   margin: 0 auto;
@@ -274,56 +265,21 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
 }
 
 .section-spacing-lg {
-  padding-top: 8rem;
-  padding-bottom: 8rem;
+  padding-top: 7.5rem;
+  padding-bottom: 7.5rem;
 }
 
 .border-divider {
   border-bottom: 1px solid var(--border-color);
 }
 
-/* Clean Editorial Numbers & Columns */
+/* Editorial Progression Styling */
 .number-editorial {
   font-family: var(--font-heading);
   font-weight: 800;
   font-size: 1.125rem;
   color: var(--accent-cyan);
   margin-bottom: 0.75rem;
-}
-
-/* Contact / Intake Form Controls */
-.form-group {
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-  margin-bottom: 1.5rem;
-}
-
-.form-label {
-  font-size: 0.875rem;
-  font-weight: 600;
-  color: var(--text-primary);
-}
-
-.form-input, .form-select, .form-textarea {
-  width: 100%;
-  background-color: var(--bg-secondary);
-  border: 1px solid var(--border-color);
-  border-radius: 6px;
-  padding: 0.875rem 1rem;
-  color: var(--text-primary);
-  font-family: var(--font-body);
-  font-size: 0.95rem;
-  transition: border-color 0.2s ease;
-}
-
-.form-input:focus, .form-select:focus, .form-textarea:focus {
-  border-color: var(--accent-cyan);
-  outline: none;
-}
-
-.form-input::placeholder, .form-textarea::placeholder {
-  color: #64748B;
 }
 
 /* Footer */
@@ -345,13 +301,17 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
     display: block;
   }
 
+  .brand-logo-img {
+    height: 36px;
+  }
+
   .section-spacing {
     padding-top: 4rem;
     padding-bottom: 4rem;
   }
 
   .section-spacing-lg {
-    padding-top: 5rem;
-    padding-bottom: 5rem;
+    padding-top: 4.5rem;
+    padding-bottom: 4.5rem;
   }
 }

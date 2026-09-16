@@ -2,6 +2,7 @@
 const KENTARA_CONFIG = {
   whatsappDisplay: '+234 9162797282',
   whatsappNumber: '2349162797282', // wa.me format (no +, spaces, or formatting characters)
+  email: 'info@kentaratech.com',
 };
 
 document.addEventListener('DOMContentLoaded', () => {

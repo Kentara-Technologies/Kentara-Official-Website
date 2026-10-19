@@ -1,387 +1,505 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About Us | Kentara Technologies</title>
-  <meta name="description" content="Learn about Kentara Technologies, our mission to support growing businesses with custom software, our core values, approach, and leadership.">
-  <link rel="canonical" href="https://kentara.tech/about.html">
-  
-  <!-- Favicons and Touch Icons -->
-  <link rel="icon" type="image/x-icon" href="/favicon.ico">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-  <link rel="manifest" href="/site.webmanifest">
-  
-  <!-- Open Graph / Meta -->
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://kentaratech.com/about.html">
-  <meta property="og:title" content="About Us | Kentara Technologies">
-  <meta property="og:description" content="Purpose-driven, human-led custom software development for growing businesses.">
-  <meta property="og:image" content="https://kentaratech.com/assets/images/og-image.jpg">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us | Kentara Technologies</title>
+    <meta
+      name="description"
+      content="Learn about Kentara Technologies, our mission to support growing businesses with custom software, our core values, approach, and leadership."
+    />
+    <link rel="canonical" href="https://www.kentaratech.com/about.html" />
 
-  <!-- Tailwind CDN & Custom Stylesheet -->
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            'bg-primary': '#111317',
-            'bg-secondary': '#1A1D24',
-            'bg-tertiary': '#222731',
-            'text-primary': '#F3F4F6',
-            'text-secondary': '#A4ACB9',
-            'accent-cyan': '#38BDF8',
-            'border-color': '#282D37',
-          },
-          fontFamily: {
-            heading: ['Plus Jakarta Sans', 'sans-serif'],
-            body: ['Inter', 'sans-serif'],
+    <!-- Favicons and Touch Icons -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+
+    <!-- Open Graph / Meta -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.kentaratech.com/about.html" />
+    <meta property="og:title" content="About Us | Kentara Technologies" />
+    <meta
+      property="og:description"
+      content="Purpose-driven, human-led custom software development for growing businesses."
+    />
+    <meta
+      property="og:image"
+      content="https://www.kentaratech.com/assets/images/kentara-logo-trans2.png"
+    />
+
+    <meta property="og:site_name" content="Kentara Technologies" />
+    <meta property="og:image:width" content="890" />
+    <meta property="og:image:height" content="280" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:alt" content="Kentara Technologies logo" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="About Us | Kentara Technologies" />
+    <meta name="twitter:description" content="Purpose-driven, human-led custom software development for growing businesses." />
+    <meta name="twitter:image" content="https://www.kentaratech.com/assets/images/kentara-logo-trans2.png" />
+    <meta name="twitter:image:alt" content="Kentara Technologies logo" />
+
+    <!-- Existing Tailwind architecture; colors and fonts follow shared design tokens. -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="assets/js/tailwind-config.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;600&family=Inter:wght@400;500;600&display=swap"
+    />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <noscript
+      ><style>
+        .mobile-menu-btn {
+          display: none !important;
+        }
+        @media (max-width: 959px) {
+          .desktop-nav {
+            display: block !important;
+          }
+          .header-container {
+            flex-wrap: wrap;
+          }
+          .desktop-nav {
+            width: 100%;
+          }
+          .nav-links {
+            justify-content: space-between;
+            gap: 8px;
           }
         }
+      </style></noscript
+    >
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://www.kentaratech.com/#organization",
+      "name": "Kentara Technologies",
+      "url": "https://www.kentaratech.com/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://www.kentaratech.com/assets/images/kentara-logo-trans2.png",
+        "width": 890,
+        "height": 280
+      },
+      "email": "info@kentaratech.com",
+      "telephone": "+2349162797282",
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "RC",
+        "value": "9939182"
+      },
+      "sameAs": [
+        "https://www.linkedin.com/company/kentara-technologies",
+        "https://www.instagram.com/kentaratech/"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://www.kentaratech.com/#website",
+      "url": "https://www.kentaratech.com/",
+      "name": "Kentara Technologies",
+      "publisher": {
+        "@id": "https://www.kentaratech.com/#organization"
       }
+    },
+    {
+      "@type": "AboutPage",
+      "@id": "https://www.kentaratech.com/about.html#webpage",
+      "url": "https://www.kentaratech.com/about.html",
+      "name": "About Us | Kentara Technologies",
+      "description": "Learn about Kentara Technologies, our mission to support growing businesses with custom software, our core values, approach, and leadership.",
+      "isPartOf": {
+        "@id": "https://www.kentaratech.com/#website"
+      },
+      "about": {
+        "@id": "https://www.kentaratech.com/#organization"
+      },
+      "inLanguage": "en"
     }
-  </script>
-  <link rel="stylesheet" href="assets/css/styles.css">
-</head>
-<body class="bg-[#111317] text-[#F3F4F6] font-body antialiased selection:bg-[#38BDF8] selection:text-[#0F172A]">
-
-  <!-- Header / Navigation -->
-  <header class="header-nav">
-    <div class="header-container">
-      <a href="index.html" class="flex items-center" aria-label="Kentara Technologies Homepage">
-        <img src="assets/images/kentara-logo-trans2.png" alt="Kentara Technologies" class="brand-logo-img">
-      </a>
-
-      <nav aria-label="Main Navigation">
-        <ul class="nav-links">
-          <li><a href="index.html" class="nav-link">Home</a></li>
-          <li><a href="about.html" class="nav-link active">About</a></li>
-          <li><a href="services.html" class="nav-link">Services</a></li>
-          <li><a href="start-project.html" class="nav-link">Start a Project</a></li>
+  ]
+}
+    </script>
+  </head>
+  <body id="top" class="page-about">
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+    <header class="header-nav">
+      <div class="header-container site-container">
+        <a
+          href="index.html"
+          class="brand-link"
+          aria-label="Kentara Technologies home"
+          ><img
+decoding="async"             src="assets/images/kentara-logo-trans2.png"
+            alt="Kentara Technologies"
+            class="brand-logo-img"
+            width="890"
+            height="280"
+        /></a>
+        <nav class="desktop-nav" aria-label="Main navigation">
+          <ul class="nav-links">
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li>
+              <a href="about.html" class="nav-link active" aria-current="page"
+                >About</a
+              >
+            </li>
+            <li><a href="services.html" class="nav-link">Services</a></li>
+            <li>
+              <a href="start-project.html" class="nav-link">Start a Project</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="header-cta">
+          <a
+            class="btn-primary"
+            href="https://forms.gle/9kRRdiPnqm9UMF2G8"
+            target="_blank"
+            rel="noopener"
+            >Start a project<span aria-hidden="true">↗</span></a
+          >
+        </div>
+        <button
+          id="mobile-menu-toggle"
+          class="mobile-menu-btn"
+          type="button"
+          aria-label="Open navigation menu"
+          aria-expanded="false"
+          aria-controls="mobile-nav-overlay"
+        >
+          Menu <span class="menu-lines" aria-hidden="true"></span>
+        </button>
+      </div>
+    </header>
+    <dialog
+      id="mobile-nav-overlay"
+      class="mobile-nav-overlay"
+      aria-labelledby="mobile-menu-title"
+    >
+      <div class="mobile-nav-header">
+        <h2 id="mobile-menu-title">Explore Kentara.</h2>
+        <button
+          id="mobile-menu-close"
+          class="mobile-menu-close"
+          type="button"
+          aria-label="Close navigation menu"
+          autofocus
+        >
+          ×
+        </button>
+      </div>
+      <nav aria-label="Mobile navigation">
+        <ul class="mobile-nav-links">
+          <li><a href="index.html" class="mobile-nav-link">Home</a></li>
+          <li>
+            <a
+              href="about.html"
+              class="mobile-nav-link active"
+              aria-current="page"
+              >About</a
+            >
+          </li>
+          <li><a href="services.html" class="mobile-nav-link">Services</a></li>
+          <li>
+            <a href="start-project.html" class="mobile-nav-link"
+              >Start a Project</a
+            >
+          </li>
         </ul>
       </nav>
-
-      <div class="header-cta hidden md:block">
-        <a href="https://forms.gle/9kRRdiPnqm9UMF2G8" target="_blank" rel="noopener" class="btn-primary">Tell Us About Your Project</a>
+      <div class="mobile-nav-cta">
+        <a
+          class="btn-primary"
+          href="https://forms.gle/9kRRdiPnqm9UMF2G8"
+          target="_blank"
+          rel="noopener"
+          >Tell us about your project<span aria-hidden="true">↗</span></a
+        >
       </div>
-
-      <button id="mobile-menu-toggle" class="mobile-menu-btn md:hidden" aria-label="Open mobile menu" aria-expanded="false">
-        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
-        </svg>
-      </button>
-    </div>
-  </header>
-
-  <!-- Mobile Overlay Menu -->
-  <div id="mobile-nav-overlay" class="mobile-nav-overlay" role="dialog" aria-modal="true" aria-label="Mobile Navigation">
-    <div class="mobile-nav-header">
-      <a href="index.html" class="flex items-center">
-        <img src="assets/images/kentara-logo-trans2.png" alt="Kentara Technologies" class="brand-logo-img">
-      </a>
-      <button id="mobile-menu-close" class="mobile-menu-btn" aria-label="Close mobile menu">
-        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
-        </svg>
-      </button>
-    </div>
-    <ul class="mobile-nav-links">
-      <li><a href="index.html" class="mobile-nav-link">Home</a></li>
-      <li><a href="about.html" class="mobile-nav-link active">About</a></li>
-      <li><a href="services.html" class="mobile-nav-link">Services</a></li>
-      <li><a href="start-project.html" class="mobile-nav-link">Start a Project</a></li>
-    </ul>
-    <div class="mt-auto">
-      <a href="https://forms.gle/9kRRdiPnqm9UMF2G8" target="_blank" rel="noopener" class="btn-primary w-full text-center">Tell Us About Your Project</a>
-    </div>
-  </div>
-
-  <main id="main-content">
-    
-    <!-- 1. PAGE HERO (Canvas: #111317) -->
-    <section class="section-spacing-lg border-divider bg-[#111317]">
-      <div class="site-container">
-        <div class="max-w-3xl">
-          <h1 class="text-4xl sm:text-5xl font-extrabold text-[#F3F4F6] tracking-tight leading-tight mb-6">
-            Building software that serves growing businesses.
+    </dialog>
+    <main id="main-content" tabindex="-1">
+      <section class="page-hero section-spacing-lg border-divider">
+        <div class="site-container">
+          <span class="eyebrow">ABOUT KENTARA</span>
+          <h1>
+            Purpose-driven.<br />Human-led.<br /><span class="text-cyan"
+              >Business-first.</span
+            >
           </h1>
-          <p class="text-lg sm:text-xl text-[#A4ACB9] leading-relaxed">
-            Kentara Technologies is a human-led, purpose-driven engineering company focused on creating custom web applications, mobile platforms, and infrastructure designed around operational reality.
+          <p class="hero-description">
+            Kentara Technologies builds custom software, digital platforms and
+            infrastructure around the realities of growing businesses.
           </p>
         </div>
-      </div>
-    </section>
-
-    <!-- 2. OUR STORY (Surface: #1A1D24) -->
-    <section class="section-spacing border-divider bg-[#1A1D24]">
-      <div class="site-container">
-        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-16 items-start">
-          <div class="lg:col-span-5">
-            <h2 class="text-2xl sm:text-3xl font-bold text-[#F3F4F6]">
-              Our Story
-            </h2>
+      </section>
+      <section class="section-spacing">
+        <div class="site-container editorial-grid">
+          <div class="reveal">
+            <span class="eyebrow">OUR STORY</span>
+            <h2>Better software.<br />Fewer barriers.</h2>
           </div>
-          <div class="lg:col-span-7 space-y-6 text-base text-[#A4ACB9] leading-relaxed">
+          <div class="editorial-copy reveal">
             <p>
-              Growing businesses frequently run into an obstacle when seeking custom software: traditional agencies often demand prohibitive upfront payments or deliver rigid off-the-shelf templates that fail to support complex business workflows.
+              Growing businesses need technology that fits their workflows,
+              customers and goals. Accessing it should feel clear and practical.
             </p>
             <p>
-              Kentara was established to eliminate this friction. We combine high-caliber engineering standards with payment models structured specifically for growing enterprises, ensuring that businesses can acquire tailored technology without compromising cash flow stability.
+              Kentara brings together professional software engineering and
+              flexible, business-focused engagement. We build tailored solutions
+              and offer practical payment options, with requirements and
+              expectations defined from the start.
+            </p>
+            <p>
+              We focus on real operational problems rather than unnecessary
+              features or generic solutions.
             </p>
           </div>
         </div>
-      </div>
-    </section>
-
-    <!-- 3. OUR MISSION (Canvas: #111317) -->
-    <section class="section-spacing border-divider bg-[#111317]">
-      <div class="site-container">
-        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-16 items-start">
-          <div class="lg:col-span-5">
-            <h2 class="text-2xl sm:text-3xl font-bold text-[#F3F4F6]">
-              Our Mission
+      </section>
+      <section class="section-spacing surface-white border-divider">
+        <div class="site-container editorial-grid">
+          <div class="reveal">
+            <span class="eyebrow">OUR MISSION</span>
+            <h2>
+              Technology that helps<br />businesses
+              <span class="text-cyan">move forward.</span>
             </h2>
           </div>
-          <div class="lg:col-span-7">
-            <p class="text-lg text-[#F3F4F6] font-medium leading-relaxed mb-4">
-              To empower growing businesses with access to reliable, high-performance custom software and practical payment options that enable sustainable commercial expansion.
+          <div class="editorial-copy reveal">
+            <p class="lead-copy">
+              To empower growing businesses with access to reliable,
+              high-performance custom software and practical payment options
+              that support sustainable growth.
             </p>
-            <p class="text-base text-[#A4ACB9] leading-relaxed">
-              We focus on solving real operational problems through technology rather than pushing unnecessary features or generic digital marketing retainers.
+            <p>
+              That means starting with the problem, designing around the user
+              and building technology with a clear purpose.
             </p>
           </div>
         </div>
-      </div>
-    </section>
-
-    <!-- 4. OUR APPROACH (Surface: #1A1D24) -->
-    <section class="section-spacing border-divider bg-[#1A1D24]">
+      </section>
+      <section class="section-spacing">
+        <div class="site-container">
+          <div class="section-heading reveal">
+            <div>
+              <span class="eyebrow">OUR VALUES</span>
+              <h2>The principles behind<br />the work.</h2>
+            </div>
+            <p>
+              Purpose, transparency, quality and flexibility guide how we build
+              and how we work with you.
+            </p>
+          </div>
+          <div class="values-grid">
+            <article class="value-item reveal">
+              <span class="service-number">01</span>
+              <h3>Purpose</h3>
+              <p>
+                Useful, focused technology that solves a real business problem.
+              </p>
+            </article>
+            <article class="value-item reveal">
+              <span class="service-number">02</span>
+              <h3>Transparency</h3>
+              <p>Clear scope, realistic timelines and honest communication.</p>
+            </article>
+            <article class="value-item reveal">
+              <span class="service-number">03</span>
+              <h3>Quality</h3>
+              <p>Thoughtful design and maintainable, reliable engineering.</p>
+            </article>
+            <article class="value-item reveal">
+              <span class="service-number">04</span>
+              <h3>Flexibility</h3>
+              <p>
+                Engagement and payment structures grounded in business
+                realities.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section class="section-spacing surface-silver">
+        <div class="site-container founder-grid">
+          <figure class="founder-portrait reveal">
+            <img
+decoding="async"               src="assets/images/odosa-enaruero.jpg"
+              alt="Odosamamwen Enaruero, Founder and CEO of Kentara Technologies"
+              width="1948"
+              height="2208"
+              loading="lazy"
+            />
+          </figure>
+          <div class="founder-copy reveal">
+            <span class="eyebrow">MEET THE FOUNDER</span>
+            <h2>Odosamamwen<br />Enaruero</h2>
+            <span class="founder-role">Founder / CEO</span>
+            <blockquote>
+              “Kentara was founded with a simple belief: growing businesses
+              deserve access to software that genuinely helps them move
+              forward.”
+            </blockquote>
+            <p>
+              Odosa directs Kentara’s engineering standards and client
+              engagement, keeping each project focused on the business it
+              serves.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="section-spacing">
+        <div class="site-container">
+          <div class="section-heading reveal">
+            <div>
+              <span class="eyebrow">HOW WE WORK</span>
+              <h2>A considered approach.<br />From idea to real-world use.</h2>
+            </div>
+          </div>
+          <ol class="process-grid">
+            <li class="reveal">
+              <span class="step-number">01</span>
+              <h3>Discover</h3>
+              <p>
+                Understand your business, the problem and the people who will
+                use the solution.
+              </p>
+            </li>
+            <li class="reveal">
+              <span class="step-number">02</span>
+              <h3>Design</h3>
+              <p>
+                Plan the solution and shape a clear, useful user experience.
+              </p>
+            </li>
+            <li class="reveal">
+              <span class="step-number">03</span>
+              <h3>Build</h3>
+              <p>Develop, test and refine the agreed software.</p>
+            </li>
+            <li class="reveal">
+              <span class="step-number">04</span>
+              <h3>Launch</h3>
+              <p>Deploy and prepare the solution for real-world use.</p>
+            </li>
+            <li class="reveal">
+              <span class="step-number">05</span>
+              <h3>Support</h3>
+              <p>
+                Maintain and improve the product through agreed ongoing
+                services.
+              </p>
+            </li>
+          </ol>
+        </div>
+      </section>
+      <section class="section-spacing compact-section border-divider">
+        <div class="site-container editorial-grid">
+          <div class="reveal">
+            <span class="eyebrow">BEYOND CLIENT WORK</span>
+            <h2>Building for what’s next.</h2>
+          </div>
+          <div class="editorial-copy reveal">
+            <p>
+              Alongside client solutions, Kentara is developing proprietary
+              technology products to solve real-world problems.
+            </p>
+            <span class="status-badge">Products coming soon</span>
+          </div>
+        </div>
+      </section>
+      <section class="closing-section">
+        <div class="site-container">
+          <div class="closing-cta reveal">
+            <div>
+              <span class="eyebrow">YOUR NEXT CHAPTER</span>
+              <h2>A business problem.<br />A better way forward.</h2>
+              <p>
+                Tell us about your goals and let’s explore the right solution
+                for your business.
+              </p>
+            </div>
+            <div class="closing-action">
+              <a
+                class="btn-primary"
+                href="https://forms.gle/9kRRdiPnqm9UMF2G8"
+                target="_blank"
+                rel="noopener"
+                >Tell us about your project<span aria-hidden="true">↗</span></a
+              ><span class="supporting-label"
+                >Your business. Your goals. Our starting point.</span
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer">
       <div class="site-container">
-        <div class="max-w-3xl mb-16">
-          <h2 class="text-2xl sm:text-3xl font-bold text-[#F3F4F6] mb-4">
-            Our Approach
-          </h2>
-          <p class="text-base text-[#A4ACB9]">
-            A disciplined development workflow structured around clarity and results.
-          </p>
-        </div>
-
-        <div class="space-y-8">
-          <!-- Step 1 -->
-          <div class="pt-6 border-t border-[#282D37] grid grid-cols-1 md:grid-cols-12 gap-4 items-baseline">
-            <div class="md:col-span-4 flex items-center gap-3">
-              <span class="number-editorial mb-0">01</span>
-              <h3 class="text-lg font-bold text-[#F3F4F6]">Understand</h3>
-            </div>
-            <div class="md:col-span-8">
-              <p class="text-sm text-[#A4ACB9]">
-                We thoroughly assess your business objectives, workflows, end-users, and core technical requirements.
-              </p>
-            </div>
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <a
+              href="index.html"
+              class="brand-link"
+              aria-label="Kentara Technologies home"
+              ><img
+decoding="async"                 src="assets/images/kentara-logo-trans2.png"
+                alt="Kentara Technologies"
+                class="brand-logo-img"
+                width="890"
+                height="280"
+                loading="lazy"
+            /></a>
+            <p>
+              Premium custom software, mobile applications and cloud
+              infrastructure for growing businesses.
+            </p>
+            <span class="footer-tagline">Built around your business.</span>
           </div>
-
-          <!-- Step 2 -->
-          <div class="pt-6 border-t border-[#282D37] grid grid-cols-1 md:grid-cols-12 gap-4 items-baseline">
-            <div class="md:col-span-4 flex items-center gap-3">
-              <span class="number-editorial mb-0">02</span>
-              <h3 class="text-lg font-bold text-[#F3F4F6]">Design</h3>
-            </div>
-            <div class="md:col-span-8">
-              <p class="text-sm text-[#A4ACB9]">
-                We create intuitive interface designs and system architectures focused on clarity, performance, and usability.
-              </p>
-            </div>
-          </div>
-
-          <!-- Step 3 -->
-          <div class="pt-6 border-t border-[#282D37] grid grid-cols-1 md:grid-cols-12 gap-4 items-baseline">
-            <div class="md:col-span-4 flex items-center gap-3">
-              <span class="number-editorial mb-0">03</span>
-              <h3 class="text-lg font-bold text-[#F3F4F6]">Build</h3>
-            </div>
-            <div class="md:col-span-8">
-              <p class="text-sm text-[#A4ACB9]">
-                We engineer clean, maintainable software using modern technologies, with regular milestone demonstrations.
-              </p>
-            </div>
-          </div>
-
-          <!-- Step 4 -->
-          <div class="pt-6 border-t border-[#282D37] grid grid-cols-1 md:grid-cols-12 gap-4 items-baseline">
-            <div class="md:col-span-4 flex items-center gap-3">
-              <span class="number-editorial mb-0">04</span>
-              <h3 class="text-lg font-bold text-[#F3F4F6]">Launch</h3>
-            </div>
-            <div class="md:col-span-8">
-              <p class="text-sm text-[#A4ACB9]">
-                We handle deployment, data setup, domain configuration, and launch verification to ensure smooth operation.
-              </p>
-            </div>
-          </div>
-
-          <!-- Step 5 -->
-          <div class="pt-6 border-t border-[#282D37] grid grid-cols-1 md:grid-cols-12 gap-4 items-baseline">
-            <div class="md:col-span-4 flex items-center gap-3">
-              <span class="number-editorial mb-0">05</span>
-              <h3 class="text-lg font-bold text-[#F3F4F6]">Support</h3>
-            </div>
-            <div class="md:col-span-8">
-              <p class="text-sm text-[#A4ACB9]">
-                We provide ongoing technical support, performance maintenance, and growth updates as your operational needs evolve.
-              </p>
+          <nav aria-label="Footer navigation">
+            <h2>Explore</h2>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="services.html">Services</a></li>
+              <li><a href="start-project.html">Start a Project</a></li>
+            </ul>
+          </nav>
+          <div class="footer-contact">
+            <h2>Let’s talk</h2>
+            <a href="mailto:info@kentaratech.com">info@kentaratech.com</a
+            ><a
+              href="https://wa.me/2349162797282"
+              target="_blank"
+              rel="noopener"
+              >+234 9162797282 <span aria-hidden="true">↗</span></a
+            >
+            <div class="social-links">
+              <a
+                href="https://www.linkedin.com/company/kentara-technologies"
+                target="_blank"
+                rel="noopener"
+                >LinkedIn <span aria-hidden="true">↗</span></a
+              ><a
+                href="https://www.instagram.com/kentaratech/"
+                target="_blank"
+                rel="noopener"
+                >Instagram <span aria-hidden="true">↗</span></a
+              >
             </div>
           </div>
         </div>
-
-      </div>
-    </section>
-
-    <!-- 5. OUR VALUES (Canvas: #111317) -->
-    <section class="section-spacing border-divider bg-[#111317]">
-      <div class="site-container">
-        <div class="max-w-3xl mb-16">
-          <h2 class="text-2xl sm:text-3xl font-bold text-[#F3F4F6] mb-4">
-            Our Values
-          </h2>
-          <p class="text-base text-[#A4ACB9]">
-            The foundational principles that guide how we engineer software and interact with clients.
-          </p>
-        </div>
-
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-          <div class="pt-6 border-t border-[#282D37]">
-            <h3 class="text-lg font-bold text-[#F3F4F6] mb-2">Purpose</h3>
-            <p class="text-sm text-[#A4ACB9] leading-relaxed">
-              We build technology to solve real business problems, keeping solutions lean, useful, and straightforward.
-            </p>
-          </div>
-
-          <div class="pt-6 border-t border-[#282D37]">
-            <h3 class="text-lg font-bold text-[#F3F4F6] mb-2">Transparency</h3>
-            <p class="text-sm text-[#A4ACB9] leading-relaxed">
-              Clear scope, realistic timelines, and open technical communication without corporate jargon or hidden fees.
-            </p>
-          </div>
-
-          <div class="pt-6 border-t border-[#282D37]">
-            <h3 class="text-lg font-bold text-[#F3F4F6] mb-2">Quality</h3>
-            <p class="text-sm text-[#A4ACB9] leading-relaxed">
-              Rigorously tested, maintainable, and resilient code built to serve your business for years to come.
-            </p>
-          </div>
-
-          <div class="pt-6 border-t border-[#282D37]">
-            <h3 class="text-lg font-bold text-[#F3F4F6] mb-2">Flexibility</h3>
-            <p class="text-sm text-[#A4ACB9] leading-relaxed">
-              Practical structures like Kentara Flex that adapt software investments to commercial cash flow.
-            </p>
-          </div>
+        <div class="footer-bottom">
+          <p class="footer-legal"><span>© 2026 Kentara Technologies. All rights reserved.</span><span class="footer-registration">RC 9939182</span></p>
+          <a href="#top">Back to top <span aria-hidden="true">↑</span></a>
         </div>
       </div>
-    </section>
-
-    <!-- 6. FOUNDER (Surface: #1A1D24) -->
-    <section class="section-spacing border-divider bg-[#1A1D24]">
-      <div class="site-container">
-        <div class="grid grid-cols-1 md:grid-cols-12 gap-10 items-center">
-          <div class="md:col-span-5">
-            <img src="assets/images/odosa-enaruero.jpg" alt="Odosamamwen Enaruero, Founder & CEO of Kentara Technologies" class="rounded-lg border border-[#282D37] max-w-full h-auto shadow-xl" width="500" height="500" loading="lazy">
-          </div>
-          <div class="md:col-span-7">
-            <h2 class="text-2xl sm:text-3xl font-bold text-[#F3F4F6] mb-1">Odosamamwen Enaruero</h2>
-            <p class="text-sm font-semibold text-[#38BDF8] mb-6">Founder / CEO</p>
-            <p class="text-base text-[#A4ACB9] leading-relaxed mb-6">
-              "Kentara was founded with a simple belief: growing businesses deserve access to software that genuinely helps them move forward."
-            </p>
-            <p class="text-sm text-[#A4ACB9] leading-relaxed">
-              As founder, Odosa directs Kentara's engineering standards and client engagement strategy, ensuring that every project delivers authentic operational leverage.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- 7. CTA (Surface: #222731) -->
-    <section class="section-spacing-lg border-divider bg-[#222731]/50 text-center">
-      <div class="site-container">
-        <div class="max-w-2xl mx-auto">
-          <h2 class="text-3xl sm:text-4xl font-extrabold text-[#F3F4F6] mb-4">
-            Ready to build custom software for your business?
-          </h2>
-          <p class="text-base text-[#A4ACB9] mb-8 leading-relaxed">
-            Tell us about your business goals and let's explore how Kentara can build the solution you need.
-          </p>
-          <div>
-            <a href="https://forms.gle/9kRRdiPnqm9UMF2G8" target="_blank" rel="noopener" class="btn-primary text-base px-8 py-4">Tell Us About Your Project</a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-  </main>
-
-  <!-- FOOTER (Canvas: #111317) -->
-  <footer class="site-footer">
-    <div class="site-container">
-      <div class="grid grid-cols-1 md:grid-cols-12 gap-10 mb-12">
-        
-        <div class="md:col-span-5">
-          <a href="index.html" class="inline-block mb-3" aria-label="Kentara Technologies Homepage">
-            <img src="assets/images/kentara-logo-trans2.png" alt="Kentara Technologies" class="brand-logo-img">
-          </a>
-          <p class="text-xs text-[#A4ACB9] font-normal leading-relaxed mt-2 max-w-sm">
-            Kentara Technologies builds premium custom software, mobile applications, and cloud infrastructure for growing businesses.
-          </p>
-        </div>
-
-        <div class="md:col-span-3">
-          <h4 class="text-xs font-semibold uppercase tracking-wider text-[#F3F4F6] mb-4">Navigation</h4>
-          <ul class="space-y-2.5 text-sm text-[#A4ACB9]">
-            <li><a href="index.html" class="hover:text-[#38BDF8]">Home</a></li>
-            <li><a href="about.html" class="hover:text-[#38BDF8]">About</a></li>
-            <li><a href="services.html" class="hover:text-[#38BDF8]">Services</a></li>
-            <li><a href="start-project.html" class="hover:text-[#38BDF8]">Start a Project</a></li>
-          </ul>
-        </div>
-
-        <div class="md:col-span-4">
-          <h4 class="text-xs font-semibold uppercase tracking-wider text-[#F3F4F6] mb-4">Connect</h4>
-          
-          <!-- Contact Info -->
-          <div class="mb-5">
-            <span class="text-[11px] font-semibold uppercase tracking-wider text-[#A4ACB9] block mb-1">Chat with us on WhatsApp</span>
-            <a href="https://wa.me/2349162797282" target="_blank" rel="noopener" class="text-sm font-semibold text-[#F3F4F6] hover:text-[#38BDF8] transition-colors block">
-              +234 9162797282
-            </a>
-            <a href="mailto:info@kentaratech.com" class="text-sm font-semibold text-[#F3F4F6] hover:text-[#38BDF8] transition-colors block mt-1.5">
-              info@kentaratech.com
-            </a>
-          </div>
-
-          <!-- Social Links -->
-          <div class="flex items-center gap-6 text-sm text-[#A4ACB9]">
-            <a href="https://www.linkedin.com/company/kentara-technologies" target="_blank" rel="noopener" class="flex items-center gap-2 hover:text-[#38BDF8] transition-colors">
-              <svg class="w-4 h-4 text-[#38BDF8] shrink-0" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 10.9v8.37H9.25V10.9H6.46M7.86 6.78a1.62 1.62 0 1 0 0 3.24 1.62 1.62 0 0 0 0-3.24z"/></svg>
-              <span>LinkedIn</span>
-            </a>
-            <a href="https://www.instagram.com/kentaratech/" target="_blank" rel="noopener" class="flex items-center gap-2 hover:text-[#38BDF8] transition-colors">
-              <svg class="w-4 h-4 text-[#38BDF8] shrink-0" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
-              <span>Instagram</span>
-            </a>
-          </div>
-        </div>
-
-      </div>
-
-      <div class="pt-8 border-t border-[#282D37] flex flex-col sm:flex-row items-center justify-between text-xs text-[#A4ACB9] gap-4">
-        <p>&copy; 2026 Kentara Technologies. All rights reserved.</p>
-      </div>
-    </div>
-  </footer>
-
-  <script src="assets/js/main.js"></script>
-</body>
+    </footer>
+    <script src="assets/js/main.js" defer></script>
+  </body>
 </html>

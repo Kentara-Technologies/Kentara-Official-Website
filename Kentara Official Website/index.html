@@ -1,0 +1,549 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Kentara Technologies | Premium Custom Software for Growing Businesses
+    </title>
+    <meta
+      name="description"
+      content="Kentara Technologies builds premium custom software, web apps, mobile apps, and cloud infrastructure for growing businesses with flexible payment options including Kentara Flex."
+    />
+    <link rel="canonical" href="https://kentara.tech/" />
+
+    <!-- Favicons and Touch Icons -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+
+    <!-- Open Graph / Meta -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://kentaratech.com/" />
+    <meta
+      property="og:title"
+      content="Kentara Technologies | Custom Software for Growing Businesses"
+    />
+    <meta
+      property="og:description"
+      content="Software built to help your business grow. Custom web, mobile, and cloud solutions with flexible payment models."
+    />
+    <meta
+      property="og:image"
+      content="https://kentara.tech/assets/images/og-image.jpg"
+    />
+
+    <!-- Existing Tailwind architecture; colors and fonts follow shared design tokens. -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="assets/js/tailwind-config.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;600&family=Inter:wght@400;500;600&display=swap"
+    />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <noscript
+      ><style>
+        .mobile-menu-btn {
+          display: none !important;
+        }
+        @media (max-width: 959px) {
+          .desktop-nav {
+            display: block !important;
+          }
+          .header-container {
+            flex-wrap: wrap;
+          }
+          .desktop-nav {
+            width: 100%;
+          }
+          .nav-links {
+            justify-content: space-between;
+            gap: 8px;
+          }
+        }
+      </style></noscript
+    >
+  </head>
+  <body id="top" class="page-index">
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+    <header class="header-nav">
+      <div class="header-container site-container">
+        <a
+          href="index.html"
+          class="brand-link"
+          aria-label="Kentara Technologies home"
+          ><img
+            src="assets/images/kentara-logo-trans2.png"
+            alt="Kentara Technologies"
+            class="brand-logo-img"
+            width="890"
+            height="280"
+        /></a>
+        <nav class="desktop-nav" aria-label="Main navigation">
+          <ul class="nav-links">
+            <li>
+              <a href="index.html" class="nav-link active" aria-current="page"
+                >Home</a
+              >
+            </li>
+            <li><a href="about.html" class="nav-link">About</a></li>
+            <li><a href="services.html" class="nav-link">Services</a></li>
+            <li>
+              <a href="start-project.html" class="nav-link">Start a Project</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="header-cta">
+          <a
+            class="btn-primary"
+            href="https://forms.gle/9kRRdiPnqm9UMF2G8"
+            target="_blank"
+            rel="noopener"
+            >Start a project<span aria-hidden="true">↗</span></a
+          >
+        </div>
+        <button
+          id="mobile-menu-toggle"
+          class="mobile-menu-btn"
+          type="button"
+          aria-label="Open navigation menu"
+          aria-expanded="false"
+          aria-controls="mobile-nav-overlay"
+        >
+          Menu <span class="menu-lines" aria-hidden="true"></span>
+        </button>
+      </div>
+    </header>
+    <dialog
+      id="mobile-nav-overlay"
+      class="mobile-nav-overlay"
+      aria-labelledby="mobile-menu-title"
+    >
+      <div class="mobile-nav-header">
+        <h2 id="mobile-menu-title">Explore Kentara.</h2>
+        <button
+          id="mobile-menu-close"
+          class="mobile-menu-close"
+          type="button"
+          aria-label="Close navigation menu"
+          autofocus
+        >
+          ×
+        </button>
+      </div>
+      <nav aria-label="Mobile navigation">
+        <ul class="mobile-nav-links">
+          <li>
+            <a
+              href="index.html"
+              class="mobile-nav-link active"
+              aria-current="page"
+              >Home</a
+            >
+          </li>
+          <li><a href="about.html" class="mobile-nav-link">About</a></li>
+          <li><a href="services.html" class="mobile-nav-link">Services</a></li>
+          <li>
+            <a href="start-project.html" class="mobile-nav-link"
+              >Start a Project</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <div class="mobile-nav-cta">
+        <a
+          class="btn-primary"
+          href="https://forms.gle/9kRRdiPnqm9UMF2G8"
+          target="_blank"
+          rel="noopener"
+          >Tell us about your project<span aria-hidden="true">↗</span></a
+        >
+      </div>
+    </dialog>
+    <main id="main-content" tabindex="-1">
+      <section class="home-hero section-spacing-lg">
+        <div class="site-container">
+          <div class="hero-layout">
+            <div>
+              <span class="eyebrow"
+                ><span class="eyebrow-dot" aria-hidden="true"></span>
+                PURPOSE-BUILT SOFTWARE. BUSINESS-FIRST THINKING.</span
+              >
+              <h1>
+                Premium technology.<br />Built around<br /><span
+                  class="text-cyan"
+                  >your business.</span
+                >
+              </h1>
+              <p class="hero-description">
+                Custom software, web applications, mobile apps and cloud
+                infrastructure that help growing businesses work better and move
+                forward.
+              </p>
+              <div class="hero-actions">
+                <a
+                  class="btn-primary"
+                  href="https://forms.gle/9kRRdiPnqm9UMF2G8"
+                  target="_blank"
+                  rel="noopener"
+                  >Tell us about your project<span aria-hidden="true"
+                    >↗</span
+                  ></a
+                ><a class="btn-secondary" href="services.html"
+                  >Explore our services<span aria-hidden="true">↗</span></a
+                >
+              </div>
+            </div>
+            <aside
+              class="hero-aside"
+              aria-label="What our software can help you do"
+            >
+              <div class="aside-heading">
+                <span class="eyebrow">BUILT TO MOVE YOU FORWARD</span
+                ><span class="aside-arrow" aria-hidden="true">↗</span>
+              </div>
+              <div class="outcome-item">
+                <span>01</span>
+                <div>
+                  <h2>Work better.</h2>
+                  <p>Simplify processes.<br />Bring information together.</p>
+                </div>
+              </div>
+              <div class="outcome-item">
+                <span>02</span>
+                <div>
+                  <h2>Move faster.</h2>
+                  <p>Help your team respond<br />with better systems.</p>
+                </div>
+              </div>
+              <div class="outcome-item">
+                <span>03</span>
+                <div>
+                  <h2>Be easier to find.</h2>
+                  <p>Build a stronger<br />digital presence.</p>
+                </div>
+              </div>
+            </aside>
+          </div>
+          <div class="hero-baseline">
+            <span>FOR STARTUPS, SMEs & GROWING BUSINESSES</span
+            ><a href="#services-preview"
+              >Explore what we do <span aria-hidden="true">↓</span></a
+            >
+          </div>
+        </div>
+      </section>
+      <section class="section-spacing border-divider" id="services-preview">
+        <div class="site-container">
+          <div class="section-heading reveal">
+            <div>
+              <span class="eyebrow">01 / OUR CAPABILITIES</span>
+              <h2>
+                Software that fits.<br /><span class="text-secondary"
+                  >From the ground up.</span
+                >
+              </h2>
+            </div>
+            <p>
+              Purpose-built solutions for the way your business operates, serves
+              customers and grows.
+            </p>
+          </div>
+          <div class="service-accordion">
+            <details class="service-detail reveal" id="web-development" open>
+              <summary>
+                <span class="service-number">01</span
+                ><span class="service-title"
+                  ><span class="service-name">Custom Web Development</span
+                  ><span class="service-subtitle"
+                    >Websites & web applications</span
+                  ></span
+                ><span class="disclosure-icon" aria-hidden="true">+</span>
+              </summary>
+              <div class="service-content">
+                <p>
+                  Custom websites and web applications designed around your
+                  business, your customers and your workflows. Built with
+                  performance, reliability and security at the foundation.
+                </p>
+                <a class="text-link" href="services.html#web-development"
+                  >Explore this service<span aria-hidden="true">↗</span></a
+                >
+              </div>
+            </details>
+            <details class="service-detail reveal" id="mobile-development">
+              <summary>
+                <span class="service-number">02</span
+                ><span class="service-title"
+                  ><span class="service-name">Custom Mobile Development</span
+                  ><span class="service-subtitle"
+                    >iOS & Android applications</span
+                  ></span
+                ><span class="disclosure-icon" aria-hidden="true">+</span>
+              </summary>
+              <div class="service-content">
+                <p>
+                  Mobile applications built around your product, customers or
+                  internal operations. Cross-platform and native experiences
+                  shaped around your users and business needs.
+                </p>
+                <a class="text-link" href="services.html#mobile-development"
+                  >Explore this service<span aria-hidden="true">↗</span></a
+                >
+              </div>
+            </details>
+            <details class="service-detail reveal" id="cloud-infrastructure">
+              <summary>
+                <span class="service-number">03</span
+                ><span class="service-title"
+                  ><span class="service-name">Cloud Infrastructure</span
+                  ><span class="service-subtitle"
+                    >Deployment & infrastructure</span
+                  ></span
+                ><span class="disclosure-icon" aria-hidden="true">+</span>
+              </summary>
+              <div class="service-content">
+                <p>
+                  Reliable cloud environments and deployment solutions that help
+                  your software run and scale with your business. Infrastructure
+                  that supports the software Kentara builds.
+                </p>
+                <a class="text-link" href="services.html#cloud-infrastructure"
+                  >Explore this service<span aria-hidden="true">↗</span></a
+                >
+              </div>
+            </details>
+          </div>
+          <div class="service-support reveal">
+            <p>
+              Also supporting your product with UI design, SEO, hosting,
+              maintenance and technical support.
+            </p>
+            <a class="text-link" href="services.html"
+              >View all capabilities<span aria-hidden="true">↗</span></a
+            >
+          </div>
+        </div>
+      </section>
+      <section class="section-spacing" id="why-kentara">
+        <div class="site-container">
+          <div class="section-heading reveal">
+            <div>
+              <span class="eyebrow">02 / WHY KENTARA</span>
+              <h2>
+                Good technology starts<br />with
+                <span class="text-cyan">understanding.</span>
+              </h2>
+            </div>
+            <p>
+              Growing businesses deserve better software. We start with your
+              goals and build around them.
+            </p>
+          </div>
+          <div class="principles-grid">
+            <article class="principle-card reveal">
+              <span class="principle-icon" aria-hidden="true">↗</span>
+              <h3>Business-first</h3>
+              <p>
+                We understand the business problem before deciding what to
+                build.
+              </p>
+            </article>
+            <article class="principle-card reveal">
+              <span class="principle-icon" aria-hidden="true">✳</span>
+              <h3>Premium experience</h3>
+              <p>
+                Thoughtful design, reliable development and professional
+                communication.
+              </p>
+            </article>
+            <article class="principle-card reveal">
+              <span class="principle-icon" aria-hidden="true">↔</span>
+              <h3>Transparent</h3>
+              <p>
+                Clear scope, realistic expectations and open communication
+                throughout.
+              </p>
+            </article>
+            <article class="principle-card reveal">
+              <span class="principle-icon" aria-hidden="true">+</span>
+              <h3>Flexible</h3>
+              <p>
+                Practical engagement and payment options for qualifying
+                businesses.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section class="section-spacing surface-silver">
+        <div class="site-container">
+          <div class="section-heading reveal">
+            <div>
+              <span class="eyebrow">03 / OUR APPROACH</span>
+              <h2>Clarity at every step.</h2>
+            </div>
+            <a class="text-link" href="about.html"
+              >Get to know Kentara<span aria-hidden="true">↗</span></a
+            >
+          </div>
+          <ol class="process-grid">
+            <li class="reveal">
+              <span class="step-number">01</span>
+              <h3>Discover</h3>
+              <p>
+                Understand your business, the problem and the people who will
+                use the solution.
+              </p>
+            </li>
+            <li class="reveal">
+              <span class="step-number">02</span>
+              <h3>Design</h3>
+              <p>
+                Plan the solution and shape a clear, useful user experience.
+              </p>
+            </li>
+            <li class="reveal">
+              <span class="step-number">03</span>
+              <h3>Build</h3>
+              <p>Develop, test and refine the agreed software.</p>
+            </li>
+            <li class="reveal">
+              <span class="step-number">04</span>
+              <h3>Launch</h3>
+              <p>Deploy and prepare the solution for real-world use.</p>
+            </li>
+            <li class="reveal">
+              <span class="step-number">05</span>
+              <h3>Support</h3>
+              <p>
+                Maintain and improve the product through agreed ongoing
+                services.
+              </p>
+            </li>
+          </ol>
+        </div>
+      </section>
+      <section class="section-spacing">
+        <div class="site-container">
+          <div class="flex-intro reveal">
+            <div>
+              <span class="eyebrow">KENTARA FLEX</span>
+              <h2>
+                Build what you need.<br />On terms that
+                <span class="text-cyan">fit.</span>
+              </h2>
+            </div>
+            <div>
+              <p>
+                Businesses should not have to choose between quality software
+                and financial flexibility.
+              </p>
+              <p>
+                Alongside milestone-based payments, Kentara Flex gives
+                qualifying businesses a way to spread development payments over
+                an agreed period.
+              </p>
+              <a class="text-link" href="start-project.html#payment-options"
+                >Explore our payment options<span aria-hidden="true"
+                  >↗</span
+                ></a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="closing-section">
+        <div class="site-container">
+          <div class="closing-cta reveal">
+            <div>
+              <span class="eyebrow">YOUR NEXT CHAPTER</span>
+              <h2>Let’s build what your<br />business needs.</h2>
+              <p>
+                Have an idea, workflow or business problem that technology could
+                solve? Let’s talk.
+              </p>
+            </div>
+            <div class="closing-action">
+              <a
+                class="btn-primary"
+                href="https://forms.gle/9kRRdiPnqm9UMF2G8"
+                target="_blank"
+                rel="noopener"
+                >Tell us about your project<span aria-hidden="true">↗</span></a
+              ><span class="supporting-label"
+                >Your business. Your goals. Our starting point.</span
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="site-container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <a
+              href="index.html"
+              class="brand-link"
+              aria-label="Kentara Technologies home"
+              ><img
+                src="assets/images/kentara-logo-trans2.png"
+                alt="Kentara Technologies"
+                class="brand-logo-img"
+                width="890"
+                height="280"
+                loading="lazy"
+            /></a>
+            <p>
+              Premium custom software, mobile applications and cloud
+              infrastructure for growing businesses.
+            </p>
+            <span class="footer-tagline">Built around your business.</span>
+          </div>
+          <nav aria-label="Footer navigation">
+            <h2>Explore</h2>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="services.html">Services</a></li>
+              <li><a href="start-project.html">Start a Project</a></li>
+            </ul>
+          </nav>
+          <div class="footer-contact">
+            <h2>Let’s talk</h2>
+            <a href="mailto:info@kentaratech.com">info@kentaratech.com</a
+            ><a
+              href="https://wa.me/2349162797282"
+              target="_blank"
+              rel="noopener"
+              >+234 9162797282 <span aria-hidden="true">↗</span></a
+            >
+            <div class="social-links">
+              <a
+                href="https://www.linkedin.com/company/kentara-technologies"
+                target="_blank"
+                rel="noopener"
+                >LinkedIn <span aria-hidden="true">↗</span></a
+              ><a
+                href="https://www.instagram.com/kentaratech/"
+                target="_blank"
+                rel="noopener"
+                >Instagram <span aria-hidden="true">↗</span></a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>© 2026 Kentara Technologies. All rights reserved.</p>
+          <a href="#top">Back to top <span aria-hidden="true">↑</span></a>
+        </div>
+      </div>
+    </footer>
+    <script src="assets/js/main.js" defer></script>
+  </body>
+</html>

@@ -166,9 +166,7 @@ decoding="async"             src="assets/images/kentara-logo-trans2.png"
         <div class="header-cta">
           <a
             class="btn-primary"
-            href="https://forms.gle/9kRRdiPnqm9UMF2G8"
-            target="_blank"
-            rel="noopener"
+            href="start-project.html#project-intake"
             >Start a project<span aria-hidden="true">↗</span></a
           >
         </div>
@@ -219,9 +217,7 @@ decoding="async"             src="assets/images/kentara-logo-trans2.png"
       <div class="mobile-nav-cta">
         <a
           class="btn-primary"
-          href="https://forms.gle/9kRRdiPnqm9UMF2G8"
-          target="_blank"
-          rel="noopener"
+          href="start-project.html#project-intake"
           >Tell us about your project<span aria-hidden="true">↗</span></a
         >
       </div>
@@ -242,30 +238,101 @@ decoding="async"             src="assets/images/kentara-logo-trans2.png"
               you want the software to achieve.
             </p>
           </div>
-          <aside class="intake-card">
-            <span class="eyebrow">YOUR FIRST STEP</span>
-            <h2>Tell us what<br />you have in mind.</h2>
-            <p>
-              Use our project intake form to share your requirements. It’s the
-              starting point for understanding your project.
-            </p>
-            <a
-              class="btn-primary"
-              href="https://forms.gle/9kRRdiPnqm9UMF2G8"
-              target="_blank"
-              rel="noopener"
-              >Complete the project intake form<span aria-hidden="true"
-                >↗</span
-              ></a
-            ><span class="supporting-label"
-              >Opens Google Forms in a new tab.</span
-            >
-            <div class="intake-contact">
-              <span>Have a question first?</span
-              ><a href="mailto:info@kentaratech.com"
-                >info@kentaratech.com <span aria-hidden="true">↗</span></a
+          <aside class="intake-card" id="project-intake">
+            <div class="intake-content">
+              <span class="eyebrow">YOUR FIRST STEP</span>
+              <h2>Tell us about<br />your project.</h2>
+              <p>
+                Have an idea or a business challenge? Tell us a little about it.
+                You don't need to have everything figured out.
+              </p>
+              <form
+                class="project-form"
+                action="https://formspree.io/f/xvkazbdn"
+                method="post"
               >
+                <input type="text" name="_gotcha" class="form-honeypot" tabindex="-1" autocomplete="off" aria-hidden="true" />
+                <div class="project-form-fields">
+                  <div class="form-field">
+                    <label for="full-name">Full Name <span aria-hidden="true">*</span></label>
+                    <input id="full-name" name="full_name" type="text" autocomplete="name" placeholder="Your full name" required />
+                  </div>
+                  <div class="form-field">
+                    <label for="email-address">Email Address <span aria-hidden="true">*</span></label>
+                    <input id="email-address" name="email" type="email" autocomplete="email" placeholder="you@example.com" required />
+                  </div>
+                  <div class="form-field">
+                    <label for="phone-number">Phone / WhatsApp Number <span aria-hidden="true">*</span></label>
+                    <input id="phone-number" name="phone" type="tel" autocomplete="tel" placeholder="+234 800 000 0000" required />
+                  </div>
+                  <div class="form-field">
+                    <label for="service-needed">What Do You Need Help With? <span aria-hidden="true">*</span></label>
+                    <select id="service-needed" name="service_needed" required>
+                      <option value="">Choose an option</option>
+                      <option value="Custom software / web application">Custom software / web application</option>
+                      <option value="Business website or e-commerce">Business website or e-commerce</option>
+                      <option value="Mobile application">Mobile application</option>
+                      <option value="Product design / UI/UX">Product design / UI/UX</option>
+                      <option value="Not sure yet">Not sure yet</option>
+                    </select>
+                  </div>
+                  <div class="form-field">
+                    <label for="project-challenge">Tell Us About Your Idea or Challenge <span aria-hidden="true">*</span></label>
+                    <textarea id="project-challenge" name="project_challenge" rows="4" placeholder="What problem are you trying to solve, or what would you like to build?" required></textarea>
+                  </div>
+                  <div class="form-field">
+                    <label for="estimated-budget">Estimated Budget <span class="optional-label">(optional)</span></label>
+                    <select id="estimated-budget" name="estimated_budget">
+                      <option value="">Choose a range</option>
+                      <option value="Under NGN 250,000">Under NGN 250,000</option>
+                      <option value="NGN 250,000-NGN 500,000">NGN 250,000-NGN 500,000</option>
+                      <option value="NGN 500,000-NGN 1,500,000">NGN 500,000-NGN 1,500,000</option>
+                      <option value="NGN 1,500,000+">NGN 1,500,000+</option>
+                      <option value="Not sure yet">Not sure yet</option>
+                    </select>
+                  </div>
+                  <div class="form-field">
+                    <label for="payment-approach">Preferred Payment Approach <span class="optional-label">(optional)</span></label>
+                    <select id="payment-approach" name="payment_approach" aria-describedby="payment-help">
+                      <option value="">Choose an approach</option>
+                      <option value="Kentara Standard - milestone payments">Kentara Standard - milestone payments</option>
+                      <option value="Kentara Flex - flexible payments, subject to eligibility">Kentara Flex - flexible payments, subject to eligibility</option>
+                      <option value="I'd like guidance">I'd like guidance</option>
+                    </select>
+                    <p class="form-help" id="payment-help">Not sure? Choose “I'd like guidance”. Your selection is a preference, not a commitment.</p>
+                    <details class="payment-guidance">
+                      <summary>Compare Standard and Flex <span aria-hidden="true">+</span></summary>
+                      <p><strong>Kentara Standard:</strong> 30% upfront, 40% at an agreed milestone and 30% at completion and handover.</p>
+                      <p><strong>Kentara Flex:</strong> 30% of the development fee upfront; the remaining 70% over an agreed period after completion and launch. Subject to eligibility and approval. Third-party costs are separate and are not financed.</p>
+                      <a href="#payment-options">View full payment details <span aria-hidden="true">↗</span></a>
+                    </details>
+                  </div>
+                </div>
+                <p class="form-reply">We'll reply to your enquiry in under 24 hours.</p>
+                <p class="form-privacy">Your details are used only to review your project enquiry and contact you about it. <a href="privacy.html">Read our privacy notice</a>.</p>
+                <p class="form-status" role="alert" tabindex="-1" hidden></p>
+                <button class="btn-primary form-submit" type="submit">
+                  <span class="submit-state submit-idle">Send Project Enquiry<span class="submit-arrow" aria-hidden="true">→</span></span>
+                  <span class="submit-state submit-loading" hidden><span class="button-spinner" aria-hidden="true"></span>Sending enquiry...</span>
+                </button>
+              </form>
+              <p class="visually-hidden form-announcement" role="status" aria-live="polite" aria-atomic="true"></p>
+              <div class="intake-contact">
+                <span>Have a question first?</span
+                ><a href="mailto:info@kentaratech.com"
+                  >info@kentaratech.com <span aria-hidden="true">↗</span></a
+                >
+              </div>
             </div>
+            <section class="form-success" hidden tabindex="-1" aria-labelledby="enquiry-success-title">
+              <div class="success-icon" aria-hidden="true">
+                <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m8 16 5.5 5.5L24 10" /></svg>
+              </div>
+              <h2 id="enquiry-success-title">Your enquiry is in.</h2>
+              <p>Thank you for reaching out to Kentara. We've received your project details and will review them shortly.</p>
+              <p>Our team will contact you using the information you provided. We'll reply in under 24 hours.</p>
+              <a class="text-link" href="index.html">Back to the homepage<span aria-hidden="true">↗</span></a>
+            </section>
           </aside>
         </div>
       </section>
@@ -418,14 +485,10 @@ decoding="async"             src="assets/images/kentara-logo-trans2.png"
             <div class="closing-action">
               <a
                 class="btn-primary"
-                href="https://forms.gle/9kRRdiPnqm9UMF2G8"
-                target="_blank"
-                rel="noopener"
+                href="start-project.html#project-intake"
                 >Complete the project intake form<span aria-hidden="true"
                   >↗</span
                 ></a
-              ><span class="supporting-label"
-                >Opens Google Forms in a new tab.</span
               >
             </div>
           </div>
@@ -461,6 +524,7 @@ decoding="async"                 src="assets/images/kentara-logo-trans2.png"
               <li><a href="about.html">About</a></li>
               <li><a href="services.html">Services</a></li>
               <li><a href="start-project.html">Start a Project</a></li>
+              <li><a href="privacy.html">Privacy notice</a></li>
             </ul>
           </nav>
           <div class="footer-contact">
@@ -494,5 +558,6 @@ decoding="async"                 src="assets/images/kentara-logo-trans2.png"
       </div>
     </footer>
     <script src="assets/js/main.js" defer></script>
+    <script src="assets/js/project-form.js" defer></script>
   </body>
 </html>
